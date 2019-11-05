@@ -15,7 +15,7 @@ Including another URLconf
 """
 
 from django.urls import path
-from fastrunner.views import project, config, schedule, run, case, suite, report, leveltag
+from fastrunner.views import project, config, schedule, run, case, suite, report, leveltag, casefile
 
 urlpatterns = [
     # 项目相关接口地址
@@ -44,8 +44,10 @@ urlpatterns = [
         "post": "run"
     })),
 
-    # 文件上传 修改 删除接口地址
-    # path('file/', project.FileView.as_view()),
+    # file 接口地址
+    path('file/', casefile.FileView.as_view({
+        "put": "upload"
+    })),
 
     # case 接口模板地址
     path('case/', case.CaseTemplateView.as_view({
@@ -58,6 +60,10 @@ urlpatterns = [
         "get": "single",
         "patch": "update",
         "post": "copy"
+    })),
+
+    path('case/import/', case.CaseTemplateView.as_view({
+        "post": "case_import",
     })),
 
     # suite 接口地址

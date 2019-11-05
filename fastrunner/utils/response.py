@@ -102,6 +102,18 @@ CASE_NOT_EXISTS = {
     "msg": "该用例不存在"
 }
 
+CASE_UPLOAD_SUCCESS = {
+    'code': '0103',
+    'success': True,
+    'msg': '用例导入成功'
+}
+
+CASE_UPLOAD_FAIL = {
+    'code': '0104',
+    'success': False,
+    'msg': '无可用用例导入'
+}
+
 CASE_DELETE_SUCCESS = {
     "code": "0003",
     "success": True,

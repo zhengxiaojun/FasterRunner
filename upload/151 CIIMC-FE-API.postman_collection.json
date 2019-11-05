@@ -1,0 +1,2429 @@
+{
+	"info": {
+		"_postman_id": "2a49bb62-a089-4bc2-a05c-a1d326667caf",
+		"name": "151 CIIMC-FE-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "城智管理",
+			"item": [
+				{
+					"name": "streamer 监控",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "95410fc8-94a3-4c5f-82d6-b96899a2f0d0",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://10.101.12.4:15905/streamer-fe/api/monitor?token={{token}}",
+							"protocol": "http",
+							"host": [
+								"10",
+								"101",
+								"12",
+								"4"
+							],
+							"port": "15905",
+							"path": [
+								"streamer-fe",
+								"api",
+								"monitor"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "plumber 监控",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "42cc4e9c-4147-4d81-a4bc-af0f7ebf158c",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://10.101.12.4:15901/plumber-fe/api/monitor?token={{token}}",
+							"protocol": "http",
+							"host": [
+								"10",
+								"101",
+								"12",
+								"4"
+							],
+							"port": "15901",
+							"path": [
+								"plumber-fe",
+								"api",
+								"monitor"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/image minio",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f92c198a-c285-415a-9b6d-2eac1e9eb574",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/image?uuid=p.151test.e6b9da583fd8d507928c5564460256ab&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"image"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "p.151test.e6b9da583fd8d507928c5564460256ab"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/image ssdb",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f92c198a-c285-415a-9b6d-2eac1e9eb574",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/image?uuid=e6b9da583fd8d507928c5564460256ab&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"image"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "e6b9da583fd8d507928c5564460256ab"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/area/grid-count 区域地理位置聚合",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/area/grid-count?token={{token}}&precision=5&parent=1&category= 小区",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"area",
+								"grid-count"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "precision",
+									"value": "5"
+								},
+								{
+									"key": "parent",
+									"value": "1"
+								},
+								{
+									"key": "category",
+									"value": " 小区"
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/fixed-data/list 固定事件查询",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/fixed-data/list?token={{token}}&area=1&type=ceshi&battery=in./63/30/27",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"fixed-data",
+								"list"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "area",
+									"value": "1"
+								},
+								{
+									"key": "type",
+									"value": "ceshi"
+								},
+								{
+									"key": "battery",
+									"value": "in./63/30/27",
+									"description": "#%&"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/monitor/num-active-device 设备监控，\b有参数",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fb98ad38-2019-4a81-866a-c5a1f93b83c1",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});",
+									"",
+									"pm.test('test data', function() {",
+									"    var jsondata = pm.response.json();",
+									"    var length = Object.keys(jsondata.data).length; ",
+									"    pm.expect(2).to.eql(length);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/monitor/num-active-device?seconds=1274606&channel=sii&deviceType=TurbiditySensor&town=彭浦街道&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"monitor",
+								"num-active-device"
+							],
+							"query": [
+								{
+									"key": "seconds",
+									"value": "1274606"
+								},
+								{
+									"key": "channel",
+									"value": "sii"
+								},
+								{
+									"key": "deviceType",
+									"value": "TurbiditySensor"
+								},
+								{
+									"key": "town",
+									"value": "彭浦街道"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/monitor/num-active-device 设备监控，无参数",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bb499128-e026-4b51-95f0-00825e054f40",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/monitor/num-active-device?seconds=30&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"monitor",
+								"num-active-device"
+							],
+							"query": [
+								{
+									"key": "seconds",
+									"value": "30"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/dev-status/dev-search 事件分布，事件信息",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a8c51162-26c3-43db-bbf3-965991938633",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e5badc23-e70d-4090-95c4-12918dc2598e",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/dev-status/dev-search?channel=sii&deviceID=sii.D1527406346817&timestamp={{timestamp}}&winsize=604800&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"dev-status",
+								"dev-search"
+							],
+							"query": [
+								{
+									"key": "channel",
+									"value": "sii"
+								},
+								{
+									"key": "deviceID",
+									"value": "sii.D1527406346817"
+								},
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "604800"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/event/list 城智-事件明细",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "fc6c9606-6eed-44a5-bf68-65e958041cfb",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event/list?token={{token}}&args.EventName=烟雾异常超时报警&timestamp={{timestamp}}&winsize=3600000&limit=5&offset=0",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event",
+								"list"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "channel",
+									"value": "sii",
+									"disabled": true
+								},
+								{
+									"key": "deviceType",
+									"value": "TemperatureHumiditySensor",
+									"disabled": true
+								},
+								{
+									"key": "deviceID",
+									"value": "sii.D1527406346817",
+									"disabled": true
+								},
+								{
+									"key": "raw_device_id",
+									"value": "D1527406346817",
+									"disabled": true
+								},
+								{
+									"key": "args.eventTypekey",
+									"value": "ggws",
+									"disabled": true
+								},
+								{
+									"key": "args.EventName",
+									"value": "烟雾异常超时报警"
+								},
+								{
+									"key": "args.eventTypeName",
+									"value": "公共卫生",
+									"disabled": true
+								},
+								{
+									"key": "district",
+									"value": "静安区",
+									"disabled": true
+								},
+								{
+									"key": "town",
+									"value": "临汾路街道",
+									"disabled": true
+								},
+								{
+									"key": "pylon_name",
+									"value": "临汾路街道",
+									"disabled": true
+								},
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "3600000"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/event/list 事件分布，场景类型筛选",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d37a7f38-4581-48b8-a83d-0e4045a888cd",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event/list?args.eventTypeName=居住社区&args.eventTypekey=jzsq&token={{token}}&limit=5&offset=0",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event",
+								"list"
+							],
+							"query": [
+								{
+									"key": "args.eventTypeName",
+									"value": "居住社区"
+								},
+								{
+									"key": "args.eventTypekey",
+									"value": "jzsq"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/event/list 事件分布，事件列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d27e6623-1073-4c00-9c6e-93445343f3a6",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2c5135b9-887d-4b51-b8c8-98fe5bce389f",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event/list?timestamp={{timestamp}}&winsize=360000&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event",
+								"list"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "360000"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "deviceType",
+									"value": "PuddleSensor",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/event/count-by-hour 事件总览，按小时事件数",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8ef27cd8-8d7f-46dd-8e23-dfe28f24ac25",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "bda76774-e056-49d3-b16d-55b24b3f632a",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event/count-by-hour?timestamp={{timestamp}}&winsize=604800&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event",
+								"count-by-hour"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "604800"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/event/count-by-day 事件总览，按天事件数",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b2710904-8e8e-4975-99ae-4e9e2566613c",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c98daaef-c5fc-4725-96fc-a7f891dfcb34",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event/count-by-day?timestamp={{timestamp}}&winsize=604800&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event",
+								"count-by-day"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "604800"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/event/count-group-by 事件总览，统计列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "61024428-83c0-4854-b6d7-d3c1c3f565ee",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    var length = Object.keys(jsondata).length; ",
+									"    pm.expect(length).not.eql(0);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2abc2a58-3e37-46e6-a208-64c41b6bd624",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event/count-group-by?timestamp={{timestamp}}&winsize=604799&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event",
+								"count-group-by"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "604799"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/event/filter-meta 事件总览，事件下拉框",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6001db95-70f2-4a6c-93a0-7f87b79f63f6",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event/filter-meta?token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event",
+								"filter-meta"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/dev-status/list 城智-车辆轨迹",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "fc6c9606-6eed-44a5-bf68-65e958041cfb",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/dev-status/list?raw_device_id=vehic32FFD6054E4238392289045100000000&timestamp={{timestamp}}&winsize=36000000&limit=2&filter=work_status,district,deviceType&idPrefix=vortex&location_type=current&pylon_name=南京西路街道&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"dev-status",
+								"list"
+							],
+							"query": [
+								{
+									"key": "deviceType",
+									"value": "VehicleGeolocating",
+									"disabled": true
+								},
+								{
+									"key": "deviceIDs",
+									"value": "vortex.vehic32FFD6054E4238392289045100000000",
+									"disabled": true
+								},
+								{
+									"key": "raw_device_id",
+									"value": "vehic32FFD6054E4238392289045100000000"
+								},
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "36000000"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "filter",
+									"value": "work_status,district,deviceType"
+								},
+								{
+									"key": "idPrefix",
+									"value": "vortex"
+								},
+								{
+									"key": "aggKey",
+									"value": "workingtime",
+									"disabled": true
+								},
+								{
+									"key": "location_type",
+									"value": "current"
+								},
+								{
+									"key": "pylon_name",
+									"value": "南京西路街道"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/dev-status/list 设备分布，查看轨迹",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f2582f19-23f7-4fdb-8de9-e9a924fa6455",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"test timestamp is 13\", function () {",
+									"    var data = pm.response.json().data;",
+									"    for(var key in data){",
+									"        var data2 = data[key];",
+									"        var lenth = Object.keys(data).length; ",
+									"        if(lenth !== 0){",
+									"            for(var index in data2){",
+									"                pm.expect(13).to.eql(data2[index].timestamp.toString().length);",
+									"            }",
+									"        }",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "cadb93af-1e08-428f-9328-cd50644b4bf7",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/dev-status/list?channel=vortex&deviceType=VehicleGeolocating&timestamp={{timestamp}}&winsize=60480000&deviceIDs=vortex.vehic32FFD6054E4238392289045100000000&limit=200&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"dev-status",
+								"list"
+							],
+							"query": [
+								{
+									"key": "channel",
+									"value": "vortex",
+									"description": "sii"
+								},
+								{
+									"key": "deviceType",
+									"value": "VehicleGeolocating"
+								},
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "60480000"
+								},
+								{
+									"key": "deviceIDs",
+									"value": "vortex.vehic32FFD6054E4238392289045100000000",
+									"description": "sii.D1522244984900 "
+								},
+								{
+									"key": "limit",
+									"value": "200"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/dev-status/dev-search 城智-设备当前状态",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "fc6c9606-6eed-44a5-bf68-65e958041cfb",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/dev-status/dev-search?deviceID=vortex.vehic32FFD6054E4238392289045100000000&timestamp={{timestamp}}&winsize=3600000&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"dev-status",
+								"dev-search"
+							],
+							"query": [
+								{
+									"key": "deviceID",
+									"value": "vortex.vehic32FFD6054E4238392289045100000000"
+								},
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "3600000"
+								},
+								{
+									"key": "raw_device_id",
+									"value": "vehic32FFD6054E4238392289045100000000",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/dev-status/dev-search 设备分布，查看历史上报数据",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6d4ca21b-b876-4961-8133-1aeb710b871f",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c26bd94f-4dfd-4f02-97f4-cbac86c092fd",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/dev-status/dev-search?channel=sii&deviceID=sii.D1525237118233&timestamp={{timestamp}}&winsize=3600&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"dev-status",
+								"dev-search"
+							],
+							"query": [
+								{
+									"key": "channel",
+									"value": "sii"
+								},
+								{
+									"key": "deviceID",
+									"value": "sii.D1525237118233"
+								},
+								{
+									"key": "raw_device_id",
+									"value": "D1525237118233",
+									"disabled": true
+								},
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "winsize",
+									"value": "3600"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/event/search-by-device-id 设备分布，单条件按 \bID 筛选",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "da9fcd23-aa58-4a1d-8ee7-ae869289ef7f",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event/search-by-device-id?deviceID=newlan.HCZ-00123&deviceType=CameraPeopleCountingSystem&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event",
+								"search-by-device-id"
+							],
+							"query": [
+								{
+									"key": "deviceID",
+									"value": "newlan.HCZ-00123"
+								},
+								{
+									"key": "deviceType",
+									"value": "CameraPeopleCountingSystem"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/device/list 城智-设备明细",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "fc6c9606-6eed-44a5-bf68-65e958041cfb",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp); "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/device/list?channel=unicom&limit=5&offset=0&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"device",
+								"list"
+							],
+							"query": [
+								{
+									"key": "address",
+									"value": "临汾路135-66-401",
+									"disabled": true
+								},
+								{
+									"key": "deviceType",
+									"value": "TemperatureHumiditySensor",
+									"disabled": true
+								},
+								{
+									"key": "channel",
+									"value": "unicom"
+								},
+								{
+									"key": "deviceID",
+									"value": "unicom.863703033055372",
+									"disabled": true
+								},
+								{
+									"key": "raw_device_id",
+									"value": "863703033055372",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "\b/ciimc-fe-api/device/list 设备分布，多条件筛选",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fc74777f-63f8-4485-a490-ead554ae3229",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/device/list?district=静安区&town=临汾路街道&deviceType=TemperatureHumiditySensor&channel=sii&deviceID=sii.D1515693005292&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"device",
+								"list"
+							],
+							"query": [
+								{
+									"key": "district",
+									"value": "静安区"
+								},
+								{
+									"key": "town",
+									"value": "临汾路街道"
+								},
+								{
+									"key": "deviceType",
+									"value": "TemperatureHumiditySensor"
+								},
+								{
+									"key": "channel",
+									"value": "sii"
+								},
+								{
+									"key": "deviceID",
+									"value": "sii.D1515693005292"
+								},
+								{
+									"key": "address",
+									"value": "临汾路135-66-401",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/device/availability-stats 设备总览，多条件筛选",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "43708940-6576-4378-a62e-52c31fcc1920",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/device/availability-stats?groupby=deviceType,district,channel,town&district=静安区&town=临汾路街道&deviceType=WellCoverSensor&channel=sii&token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"device",
+								"availability-stats"
+							],
+							"query": [
+								{
+									"key": "groupby",
+									"value": "deviceType,district,channel,town"
+								},
+								{
+									"key": "district",
+									"value": "静安区"
+								},
+								{
+									"key": "town",
+									"value": "临汾路街道"
+								},
+								{
+									"key": "deviceType",
+									"value": "WellCoverSensor"
+								},
+								{
+									"key": "channel",
+									"value": "sii"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ciimc-fe-api/device/filter-meta 设备总览，下拉选项",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3aaf91fd-435a-410b-8cea-ba242cd66100",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/device/filter-meta?token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"device",
+								"filter-meta"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "区域事件规则",
+			"item": [
+				{
+					"name": "/united-ciimc-api/v1/area-rule/create",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ca30d977-0117-4a83-b44b-9bdb635c8f22",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "290bff05-9983-4d7a-8ead-0f20413e0f5a",
+								"exec": [
+									"pm.test(\"get arearule id\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.globals.set(\"areaRuleID\", jsonData.data.id);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{prefix}}/united-ciimc-api/v1/area-rule/create?data={\"enabled\":1,\"type\":\"smart\",\"name\":\"门传感器低电告警\",\"smartRule\":{\"eventLevel\":\"major\",\"description\":\"门传感器电池容量低于30\",\"eventType\":\"jzsq\",\"eventScene\":\"门磁\",\"targetParentAreaID\":1,\"occurDateRanges\":[{\"endSecondsOfDay\":173,\"beginSecondsOfDay\":98},{\"endSecondsOfDay\":434,\"beginSecondsOfDay\":299}],\"targetParentAreaCategory\":\"小区\",\"pppCategory\":\"PublicService\",\"triggerConditions\":[{\"matchMode\":\"Equal\",\"value\":\"94.0\",\"genericPropertyName\":\"vendor\",\"numDevices\":3,\"deviceType\":\"DoorSensor\",\"secondsLasts\":39}],\"triggerLogicAnd\":1}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"united-ciimc-api",
+								"v1",
+								"area-rule",
+								"create"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"enabled\":1,\"type\":\"smart\",\"name\":\"门传感器低电告警\",\"smartRule\":{\"eventLevel\":\"major\",\"description\":\"门传感器电池容量低于30\",\"eventType\":\"jzsq\",\"eventScene\":\"门磁\",\"targetParentAreaID\":1,\"occurDateRanges\":[{\"endSecondsOfDay\":173,\"beginSecondsOfDay\":98},{\"endSecondsOfDay\":434,\"beginSecondsOfDay\":299}],\"targetParentAreaCategory\":\"小区\",\"pppCategory\":\"PublicService\",\"triggerConditions\":[{\"matchMode\":\"Equal\",\"value\":\"94.0\",\"genericPropertyName\":\"vendor\",\"numDevices\":3,\"deviceType\":\"DoorSensor\",\"secondsLasts\":39}],\"triggerLogicAnd\":1}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/united-ciimc-api/v1/area-rule/load",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/united-ciimc-api/v1/area-rule/load?id={{areaRuleID}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"united-ciimc-api",
+								"v1",
+								"area-rule",
+								"load"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{areaRuleID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/united-ciimc-api/v1/area-rule/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/united-ciimc-api/v1/area-rule/list?name=消防水压不足报警&eventType=jzsq&eventLevel=major&targetParentAreaID=2&targetParentAreaCategory=街道&description=消防栓水压异常超时报警",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"united-ciimc-api",
+								"v1",
+								"area-rule",
+								"list"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "消防水压不足报警"
+								},
+								{
+									"key": "eventType",
+									"value": "jzsq"
+								},
+								{
+									"key": "eventLevel",
+									"value": "major"
+								},
+								{
+									"key": "eventScene",
+									"value": "消防栓水压",
+									"disabled": true
+								},
+								{
+									"key": "targetParentAreaID",
+									"value": "2"
+								},
+								{
+									"key": "targetParentAreaCategory",
+									"value": "街道"
+								},
+								{
+									"key": "description",
+									"value": "消防栓水压异常超时报警"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/united-ciimc-api/v1/area-rule/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{prefix}}/united-ciimc-api/v1/area-rule/save?data={\"enabled\":1,\"type\":\"smart\",\"name\":\"门传感器低电告警\",\"smartRule\":{\"eventLevel\":\"major\",\"description\":\"门传感器电池容量低于30\",\"eventType\":\"jzsq\",\"eventScene\":\"门磁\",\"targetParentAreaID\":1,\"occurDateRanges\":[{\"endSecondsOfDay\":156,\"beginSecondsOfDay\":50},{\"endSecondsOfDay\":386,\"beginSecondsOfDay\":268}],\"targetParentAreaCategory\":\"小区\",\"pppCategory\":\"PublicService\",\"triggerConditions\":[{\"matchMode\":\"Equal\",\"value\":\"75.0\",\"genericPropertyName\":\"battery\",\"numDevices\":56,\"deviceType\":\"DoorSensor\",\"secondsLasts\":84}],\"triggerLogicAnd\":1},\"id\":{{areaRuleID}}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"united-ciimc-api",
+								"v1",
+								"area-rule",
+								"save"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"enabled\":1,\"type\":\"smart\",\"name\":\"门传感器低电告警\",\"smartRule\":{\"eventLevel\":\"major\",\"description\":\"门传感器电池容量低于30\",\"eventType\":\"jzsq\",\"eventScene\":\"门磁\",\"targetParentAreaID\":1,\"occurDateRanges\":[{\"endSecondsOfDay\":156,\"beginSecondsOfDay\":50},{\"endSecondsOfDay\":386,\"beginSecondsOfDay\":268}],\"targetParentAreaCategory\":\"小区\",\"pppCategory\":\"PublicService\",\"triggerConditions\":[{\"matchMode\":\"Equal\",\"value\":\"75.0\",\"genericPropertyName\":\"battery\",\"numDevices\":56,\"deviceType\":\"DoorSensor\",\"secondsLasts\":84}],\"triggerLogicAnd\":1},\"id\":{{areaRuleID}}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/united-ciimc-api/v1/area-rule/remove",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{prefix}}/united-ciimc-api/v1/area-rule/remove?id={{areaRuleID}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"united-ciimc-api",
+								"v1",
+								"area-rule",
+								"remove"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{areaRuleID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a7754f1a-cca4-47cd-9bfd-c493c94f1902",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1339d0d6-6ed8-4dfb-b85d-69a3aec52488",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "点位设备管理",
+			"item": [
+				{
+					"name": "点位设备注册，成功接收",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "694d2bdf-41be-4188-937b-ec7f4ff65aec",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"deviceID\": \"863703039002197\",\n    \"deviceType\": \"WellCoverSensor\",\n    \"channel\": \"unicom\",\n    \"data\": {\n        \"town\": \"南京西路街道\",\n        \"address\": \"上海市静安区南京西路1745号马路北雨水井\",\n        \"longitude\": \"121.451223\",\n        \"latitude\": \"31.228772\",\n        \"setup_time\": 1524809941,\n        \"vendor\": \"铂珏\",\n        \"district\": \"静安区\",\n        \"situation\": \"test\",\n        \"bindingPlaceInfo\": \"南京西路街道\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/device/register?token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"device",
+								"register"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"description": "{\n  \"deviceID\": \"D1540965351435\",\n  \"deviceType\": \"ThermalImagerySensor\",\n  \"channel\": \"sii\",\n  \"data\": {\n    \"town\": \"上海火车站\",\n    \"address\": \"上海火车南站车棚1号点\",\n    \"longitude\": \"121.45053100585938\",\n    \"latitude\": \"31.249713897705078\",\n    \"setup_time\": 1522339200,\n    \"vendor\": \"必创\",\n    \"district\": \"静安区\"\n  }\n}"
+								},
+								{
+									"key": "",
+									"value": "",
+									"description": "{\n    \"deviceID\": \"D1522325082461\",\n    \"deviceType\": \"TurbiditySensor\",\n    \"channel\": \"sii\",\n    \"data\": {\n        \"town\": \"点位->小区\",\n        \"address\": \"保德路425弄6号\",\n        \"longitude\": \"121.45377202771964\",\n        \"latitude\": \"31.317749429414683\",\n        \"setup_time\": 1524809941,\n        \"vendor\": \"测试\",\n        \"floor\": \"12\",\n        \"district\": \"静安区\",\n        \"situation\": \"test\",\n        \"bindingPlaceInfo\": \"点位->小区\"\n    }\n}",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"description": "{\n    \"deviceID\": \"863703039002197\",\n    \"deviceType\": \"WellCoverSensor\",\n    \"channel\": \"unicom\",\n    \"data\": {\n        \"town\": \"南京西路街道\",\n        \"address\": \"上海市静安区南京西路1745号马路北雨水井\",\n        \"longitude\": \"121.451223\",\n        \"latitude\": \"31.228772\",\n        \"setup_time\": 1524809941,\n        \"vendor\": \"铂珏\",\n        \"district\": \"静安区\",\n        \"situation\": \"test\",\n        \"bindingPlaceInfo\": \"南京西路街道\"\n    }\n}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "设备撤销注册，接收成功",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dbc6668d-0aff-4bd1-a465-f55c2da8c848",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"deviceID\": \"yongjiutupian\",\n    \"channel\": \"sii\"\n}"
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/device/deregister?token={{token}}",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"device",
+								"deregister"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "点位区域管理",
+			"item": [
+				{
+					"name": "删除area，area \bid 未绑定设备",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c8a06fda-99f2-4fce-be0e-589ea6895f0d",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/area/delete?id=2656&token=e1550202429f43c7bf71043868712642",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"area",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2656"
+								},
+								{
+									"key": "token",
+									"value": "e1550202429f43c7bf71043868712642"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改area，修改成功",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7d4f98f6-571f-4951-a18c-f87f902c690a",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "area_json",
+									"value": "{\n\t\"id\": 2656,\n\t\"name\": \"修改成功\",\n\t\"polygon\": [\n\t\t[121.460258, 31.310597],\n\t\t[121.457812, 31.312705],\n\t\t[121.454314, 31.31012],\n\t\t[121.458413, 31.309955]\n\t],\n\t\"address\": \"上海市静安区\",\n\t\"category\": \"街道\",\n\t\"sponsors\": [{\n\t\t\"name\": \"person_1\",\n\t\t\"phoneNumber\": \"123456\"\n\t}],\n\t\"parentID\": 1,\n\t\"longitude\": 121.460258,\n\t\"latitude\": 31.310597\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/area/save?token=e1550202429f43c7bf71043868712642",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"area",
+								"save"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "e1550202429f43c7bf71043868712642"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "添加area，带图片",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b4264cc6-462e-473d-882b-081d9c460059",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "3b5225e5-e762-4546-93bf-7783c89048ef",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);\r",
+									"var area_data = {\r",
+									"    \"name\": \"点位_\" + timestamp ,\r",
+									"    \"address\": \"上海市静安区\",\r",
+									"    \"category\": \"点位\",\r",
+									"    \"sponsors\": [\r",
+									"        {\r",
+									"            \"name\": \"person_1\",\r",
+									"            \"phoneNumber\": \"12345667890\"\r",
+									"        }\r",
+									"    ],\r",
+									"    \"parentID\": 2,\r",
+									"    \"data\": {\r",
+									"        \"area_district\": {\r",
+									"            \"areaID\": 39,\r",
+									"            \"areaCategory\": \"区\",\r",
+									"            \"areaName\": \"静安区\"\r",
+									"        },\r",
+									"        \"PTsence\": \"独居养老服务\",\r",
+									"        \"town\": {\r",
+									"            \"areaID\": 2,\r",
+									"            \"areaCategory\": \"街道\",\r",
+									"            \"areaName\": \"临汾路街道\"\r",
+									"        },\r",
+									"        \"location\": {\r",
+									"            \"latitude\": 31.3160922387,\r",
+									"            \"system\": \"wgs84\",\r",
+									"            \"longitude\": 121.457645156\r",
+									"        }\r",
+									"    },\r",
+									"    \"areaInfo\": {\r",
+									"        \"image_data_array\": [\r",
+									"            {\r",
+									"                \"contentType\": \"image/jpg\",\r",
+									"                \"blob\": \"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\"\r",
+									"            },\r",
+									"            {\r",
+									"                \"contentType\": \"image/jpg\",\r",
+									"                \"blob\": \"/9j/4AAQSkZJRgABAQAASABIAAD/4QCsRXhpZgAATU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgExAAIAAAAgAAAAWodpAAQAAAABAAAAegAAAAAAAABIAAAAAQAAAEgAAAABQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKQAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAUKADAAQAAAABAAAAUAAAAAD/4QtCaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA1LjQuMCI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjI4OEEwMjZFMzZDQjExRTY5MUExRTNFRTc5MjEyNTgzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjI4OEEwMjZEMzZDQjExRTY5MUExRTNFRTc5MjEyNTgzIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6RkQ3RjExNzQwNzIwNjgxMTgzRDE5RjNDMTgxNkM0NzciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZEN0YxMTc0MDcyMDY4MTE4M0QxOUYzQzE4MTZDNDc3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkZEN0YxMTc0MDcyMDY4MTE4M0QxOUYzQzE4MTZDNDc3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDw/eHBhY2tldCBlbmQ9InciPz4A/+0AOFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAAAAOEJJTQQlAAAAAAAQ1B2M2Y8AsgTpgAmY7PhCfv/AABEIAFAAUAMBEQACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2wBDAAEBAQEBAQEB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\"\r",
+									"            }\r",
+									"        ]\r",
+									"    },\r",
+									"    \"longitude\": 121.460258,\r",
+									"    \"latitude\": 31.310597\r",
+									"}\r",
+									"\r",
+									"pm.environment.set(\"area_data\", JSON.stringify(area_data));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "area_json",
+									"value": "{{area_data}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/area/create?token=e1550202429f43c7bf71043868712642",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"area",
+								"create"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "e1550202429f43c7bf71043868712642"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "多条件查询area",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0a67297d-98e8-4dde-8091-6d1b5ff2c2bc",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});",
+									"",
+									"pm.test('test count', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.count).to.be.gte(0);",
+									"});",
+									"",
+									"pm.test('test areas', function() {",
+									"    var jsondata = pm.response.json();",
+									"    var areas = jsondata.areas;",
+									"    for(var index in areas){",
+									"        if(areas[index].name === '南京西路街道'){",
+									"            pm.expect(areas[index].category).to.eql('街道');",
+									"            pm.expect(Object.keys(areas[index].polygon).length).to.be.gte(0);",
+									"            pm.expect(Object.keys(areas[index].sponsors).length).to.be.gte(0);",
+									"            pm.expect(areas[index].address).to.eql(\"上海市静安区\");",
+									"            pm.expect(areas[index].id).to.eql(1);",
+									"        }",
+									"    }",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/area/list?id=1&name=南京西路街道&category=街道&limit=1&offset=0&token=e1550202429f43c7bf71043868712642",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"area",
+								"list"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "南京西路街道"
+								},
+								{
+									"key": "category",
+									"value": "街道"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "token",
+									"value": "e1550202429f43c7bf71043868712642"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "简单事件规则",
+			"item": [
+				{
+					"name": "创建IOT Event Rule",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d41d6fdc-5032-4286-be31-3c40f28bf3fd",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"success\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rule_json",
+									"value": "{\n\t\"description\": \"test\",\n\t\"timeout\": 1,\n\t\"inputType\": \"list_status\",\n\t\"type\": \"simple\",\n\t\"createTS\": 0,\n\t\"enabled\": true,\n\t\"id\": 1,\n\t\"simpleRule\": [{\n\t\t\"args\": [],\n\t\t\"name\": \"test\",\n\t\t\"sequenceFilter\": {\n\t\t\t\"filterArray\": [{\n\t\t\t\t\"type\": \"logicAnd\",\n\t\t\t\t\"filters\": [{\n\t\t\t\t\t\t\"matchMode\": \"Equal\",\n\t\t\t\t\t\t\"type\": \"property\",\n\t\t\t\t\t\t\"name\": \"door_status\",\n\t\t\t\t\t\t\"value\": [\"true\"]\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"matchMode\": \"GreaterThan\",\n\t\t\t\t\t\t\"type\": \"timeRange\",\n\t\t\t\t\t\t\"value\": 120\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}],\n\t\t\t\"isForward\": true\n\t\t},\n\t\t\"messageTemplate\": \"$address$发生门磁报警\",\n\t\t\"actionType\": \"event_supply_type\",\n\t\t\"willOpenIssue\": true\n\t}],\n\t\"targetDeviceType\": \"DoorSensor\"\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event-rule/create",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event-rule",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "更新IOT Event Rule",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "824799e1-f36a-41d9-a5fa-8a7b13f8444f",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"Save success.\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rule_json",
+									"value": "{\n\t\"description\": \"test\",\n\t\"timeout\": 1,\n\t\"inputType\": \"list_status\",\n\t\"type\": \"simple\",\n\t\"createTS\": 0,\n\t\"enabled\": true,\n\t\"id\": 46,\n\t\"simpleRule\": [{\n\t\t\"args\": [],\n\t\t\"name\": \"test\",\n\t\t\"sequenceFilter\": {\n\t\t\t\"filterArray\": [{\n\t\t\t\t\"type\": \"logicAnd\",\n\t\t\t\t\"filters\": [{\n\t\t\t\t\t\t\"matchMode\": \"Equal\",\n\t\t\t\t\t\t\"type\": \"property\",\n\t\t\t\t\t\t\"name\": \"door_status\",\n\t\t\t\t\t\t\"value\": [\"true\"]\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"matchMode\": \"GreaterThan\",\n\t\t\t\t\t\t\"type\": \"timeRange\",\n\t\t\t\t\t\t\"value\": 120\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}],\n\t\t\t\"isForward\": true\n\t\t},\n\t\t\"messageTemplate\": \"$address$发生门磁报警\",\n\t\t\"actionType\": \"event_supply_type\",\n\t\t\"willOpenIssue\": true\n\t}],\n\t\"targetDeviceType\": \"DoorSensor\"\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event-rule/save",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event-rule",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除IOT Event Rule iD 不存在",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b26caa3f-f297-4467-ba08-4341393d4594",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"fail\");",
+									"});",
+									"",
+									"pm.test('test content', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.content).to.eql(\"No this event rule.\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rule_json",
+									"value": "{\"id\": 1000}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event-rule/delete",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event-rule",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除IOT Event Rule 删除 lua",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "571265a2-5111-45ad-8b58-39a5389a816a",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"Delete success.\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rule_json",
+									"value": "{\"id\": 47}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event-rule/delete",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event-rule",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除IOT Event Rule 删除 simple",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "571265a2-5111-45ad-8b58-39a5389a816a",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test('test result', function() {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.result).to.eql(\"Delete success.\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rule_json",
+									"value": "{\"id\": 46}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/event-rule/delete",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"event-rule",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "临汾外部事件",
+			"item": [
+				{
+					"name": "上报原始事件<ciimc-fe-api>",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "3601cdc8-bf59-43fe-a98c-968bc40ac0e6",
+								"exec": [
+									"var timestamp = Math.round(new Date().getTime()/1000);",
+									"",
+									"pm.environment.set(\"timestamp\", timestamp);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"args\": {\n        \"eventLevel\": \"较大事件\",\n        \"eventName\": \"消防通道占用报警[江宁路]\",\n        \"description\": \"消防通道占用报警\",\n        \"ruleUpdateTS\": \"1562745518\",\n        \"ruleCreteTS\": \"1552478675\"\n    },\n    \"data\": {\n        \"town\": {\n            \"areaID\": 35,\n            \"areaCategory\": \"街道\",\n            \"areaName\": \"江宁路街道\"\n        },\n        \"openTS\": {{timestamp}},\n        \"areaCategory\": \"街道\",\n        \"uuid\": \"be5b88f783c449d693d9f13a49ab92f3\",\n        \"isOpen\": true,\n        \"eventSourceType\": \"感知报警\",\n        \"eventType\": [\n            \"公共安全\",\n            \"重要场所安全\",\n            \"交通运行\",\n            \"消防通道占用\"\n        ],\n        \"village\": {\n            \"areaID\": 1622,\n            \"areaCategory\": \"居委会\",\n            \"areaName\": \"新安居委会\"\n        },\n        \"timestamp\": {{timestamp}},\n        \"location\": {\n            \"latitude\": 31.2396579231697,\n            \"system\": \"gcj02\",\n            \"longitude\": 121.436959088258\n        },\n        \"address\": \"新安居委会\",\n        \"coordy\": 470.29116186242,\n        \"coordx\": -2879.33020571213,\n        \"primeID\": 9788\n    },\n    \"eventID\": \"1906E4500172\"\n}"
+						},
+						"url": {
+							"raw": "{{prefix}}/ciimc-fe-api/external-event/report?token=e1550202429f43c7bf71043868712642",
+							"host": [
+								"{{prefix}}"
+							],
+							"path": [
+								"ciimc-fe-api",
+								"external-event",
+								"report"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "e1550202429f43c7bf71043868712642"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

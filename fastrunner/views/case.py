@@ -8,6 +8,7 @@ from fastrunner.utils import prepare
 from fastrunner.utils.decorator import request_log
 from fastrunner.utils.parser import Format, Parse
 from django.db import DataError
+from fastrunner.views.casefile import FileParse
 
 
 class CaseTemplateView(GenericViewSet):
@@ -121,6 +122,7 @@ class CaseTemplateView(GenericViewSet):
                 if prepare.caseInSuite(pk):
                     return Response(response.CASE_IN_SUITE)
                 models.Case.objects.get(id=pk).delete()
+                return Response(response.CASE_DELETE_SUCCESS)
             else:
                 exist = False
                 for content in request.data:
@@ -156,3 +158,41 @@ class CaseTemplateView(GenericViewSet):
         }
 
         return Response(resp)
+
+    @method_decorator(request_log(level='INFO'))
+    def case_import(self, request):
+        """
+        用例导入
+        {
+            filetype: 1 - json , 2 -excel
+            leveltagName
+            filename
+        }
+        """
+        filetype = request.data['filetype']
+        filename = request.data['filename']
+        project = request.data['project']
+        leveltagName = request.data['leveltagName']
+        folder_level = request.data['folder_level']
+        parse = FileParse(filetype, filename, leveltagName)
+        test_cases = parse.parsePostmanJson(folder_level)
+
+        for test_case in test_cases:
+            case_body = {
+                'name': test_case["name"],
+                'body': test_case["body"],
+                'url': test_case["url"],
+                'method': test_case["method"],
+                'project': models.Project.objects.get(id=project),
+                'leveltag_name': leveltagName
+            }
+
+            try:
+                models.Case.objects.create(**case_body)
+            except DataError:
+                return Response(response.DATA_TO_LONG)
+
+        if test_cases:
+            return Response(response.CASE_UPLOAD_SUCCESS)
+
+        return Response(response.CASE_UPLOAD_FAIL)
