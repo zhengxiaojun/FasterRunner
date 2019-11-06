@@ -233,7 +233,10 @@ def debug_api(api, project, name=None, save=True):
         runner.run(testcase_list)
         summary = parse_summary(runner.summary)
         if save:
-            save_summary("", summary, project, type=1)
+            if name:
+                save_summary(name, summary, project, type=1)
+            else:
+                save_summary("", summary, project, type=1)
         return summary
     except Exception as e:
         print(e)

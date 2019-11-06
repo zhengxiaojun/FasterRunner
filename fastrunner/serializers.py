@@ -26,16 +26,6 @@ class DebugTalkSerializer(serializers.ModelSerializer):
         fields = ['id', 'code']
 
 
-class RelationSerializer(serializers.ModelSerializer):
-    """
-    树形结构序列化
-    """
-
-    class Meta:
-        model = models.Relation
-        fields = '__all__'
-
-
 class LevelTagSerializer(serializers.ModelSerializer):
     """
     层级结构序列化
@@ -43,7 +33,7 @@ class LevelTagSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.LevelTag
-        fields = ['id', 'name', 'level', 'parentName', 'ltype']
+        fields = '__all__'
 
 
 class CaseSerializer(serializers.ModelSerializer):

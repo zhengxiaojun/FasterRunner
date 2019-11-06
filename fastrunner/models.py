@@ -142,21 +142,7 @@ class Report(BaseTable):
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
 
 
-class Relation(models.Model):
-    """
-    树形结构关系
-    """
-
-    class Meta:
-        verbose_name = "树形结构关系"
-        db_table = "Relation"
-
-    project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    tree = models.TextField("结构主题", null=False, default=[])
-    type = models.IntegerField("树类型", default=1)
-
-
-class LevelTag(models.Model):
+class LevelTag(BaseTable):
     """
     层级标签关系
     """

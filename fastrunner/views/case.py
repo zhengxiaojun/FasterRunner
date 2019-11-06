@@ -29,15 +29,20 @@ class CaseTemplateView(GenericViewSet):
         """
         project = request.query_params["project"]
         search = request.query_params["search"]
+        need_page = request.query_params["need_page"]
+
         queryset = self.get_queryset().filter(project__id=project).order_by('-update_time')
 
         if search != '':
             queryset = queryset.filter(name__contains=search)
 
-        pagination_queryset = self.paginate_queryset(queryset)
-        serializer = self.get_serializer(pagination_queryset, many=True)
-
-        return self.get_paginated_response(serializer.data)
+        if need_page == 'true':
+            pagination_queryset = self.paginate_queryset(queryset)
+            serializer = self.get_serializer(pagination_queryset, many=True)
+            return self.get_paginated_response(serializer.data)
+        else:
+            serializer = self.get_serializer(queryset, many=True)
+            return Response(serializer.data)
 
     @method_decorator(request_log(level='INFO'))
     def add(self, request):
@@ -176,9 +181,8 @@ class CaseTemplateView(GenericViewSet):
         filename = request.data['filename']
         project = request.data['project']
         leveltagName = request.data['leveltagName']
-        folder_level = request.data['folder_level']
         parse = FileParse(filetype, filename, leveltagName)
-        test_cases = parse.parsePostmanJson(folder_level)
+        test_cases = parse.parsePostmanJson()
 
         for test_case in test_cases:
             case = models.Case.objects.filter(name=test_case["name"])

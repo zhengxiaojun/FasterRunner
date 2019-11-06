@@ -8,6 +8,7 @@ from fastrunner import models, serializers
 from rest_framework.response import Response
 from fastrunner.utils import response
 from fastrunner.utils.decorator import request_log
+from datetime import datetime
 
 
 class LevelTagView(GenericViewSet):
@@ -29,7 +30,7 @@ class LevelTagView(GenericViewSet):
         search = request.query_params["search"]
         ltype = request.query_params["ltype"]
 
-        queryset = self.get_queryset().filter(project__id=project).order_by('-id')
+        queryset = self.get_queryset().filter(project__id=project).order_by('-update_time')
 
         if search != '':
             queryset = queryset.filter(name__contains=search)
@@ -109,6 +110,7 @@ class LevelTagView(GenericViewSet):
         leveltag.level = request.data["level"]
         leveltag.parentName = request.data["parentName"]
         leveltag.ltype = request.data["ltype"]
+        leveltag.update_time = datetime.now()
         leveltag.save()
 
         return Response(response.LEVELTAG_UPDATE_SUCCESS)

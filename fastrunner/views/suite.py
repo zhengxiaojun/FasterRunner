@@ -11,6 +11,7 @@ from rest_framework.response import Response
 from fastrunner.utils import response
 from fastrunner.utils import prepare
 from fastrunner.utils.decorator import request_log
+from datetime import datetime
 
 
 class SuiteView(GenericViewSet):
@@ -123,6 +124,7 @@ class SuiteView(GenericViewSet):
 
         suite_id = kwargs['id']
         case_list = request.data.pop("case_list")
+        request.data['update_time'] = datetime.now()
 
         models.Suite.objects.filter(id=suite_id).update(**request.data)
 

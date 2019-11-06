@@ -45,7 +45,8 @@ class FileParse(object):
         self.filetype = filetype
         self.filename = filename
         self.leveltagName = leveltagName
-        self.test_cases = []
+        self.cases = []  # 待解析
+        self.test_cases = []  # 已解析
 
     def read(self, filename):
         with open(filename, 'r') as file:
@@ -159,8 +160,8 @@ class FileParse(object):
         }
         return body
 
-    def add_test_case(self, cases):
-        for case in cases:
+    def add_test_case(self, case):
+        try:
             test_case = {}
 
             test_case["name"] = case["name"]
@@ -170,7 +171,17 @@ class FileParse(object):
 
             self.test_cases.append(test_case)
 
-    def parsePostmanJson(self, folder_level):
+        except KeyError as e:
+            print(e)
+
+    def get_cases(self, data):
+        if 'item' in data:
+            for child_item in data['item']:
+                self.get_cases(child_item)
+        else:
+            self.cases.append(data)
+
+    def parsePostmanJson(self):
         """
         :param filetype: 1: json 2: excel
         :param filename:
@@ -182,15 +193,12 @@ class FileParse(object):
         """
         file = BASE_DIR + self.filename
         data = self.read(file)
-        if self.filetype == '1':
+        if self.filetype == '1':  # json
             data = json.loads(data)
 
-            if folder_level == '1':
-                cases = data["item"]  # 一级目录
-                self.add_test_case(cases)
-
-            if folder_level == '2':
-                for item1 in data["item"]:
-                    self.add_test_case(item1["item"])  # 二级目录
+            self.get_cases(data)
+            print('case length:' + str(len(self.cases)))
+            for case in self.cases:
+                self.add_test_case(case)
 
         return self.test_cases

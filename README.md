@@ -22,23 +22,22 @@
 
 
 # create database
+
 create database fastrunner default character set utf8 COLLATE utf8_general_ci;
 
 # make migrations for fastuser、fastrunner
-python3 manage.py makemigrations fastrunner fastuser
+
+python3 manage.py makemigrations fastrunner
+python3 manage.py makemigrations fastuser
 
 # migrate for database
+
 python3 manage.py migrate fastrunner
 python3 manage.py migrate fastuser
 python3 manage.py migrate djcelery
 
-python manage.py makemigrations fastrunner fastuser
-
-python manage.py migrate fastrunner
-python manage.py migrate fastuser
-python manage.py migrate djcelery
-
 # 启动服务
+
 python manage.py runserver
 ```
 

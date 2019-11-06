@@ -19,6 +19,7 @@ def get_project_detail(pk):
     """
     case_count = get_counter(models.Case, pk=pk)
     suite_count = get_counter(models.Suite, pk=pk)
+    leveltag_count = get_counter(models.LevelTag, pk=pk)
     config_count = get_counter(models.Config, pk=pk)
     variables_count = get_counter(models.Variables, pk=pk)
     report_count = get_counter(models.Report, pk=pk)
@@ -28,6 +29,7 @@ def get_project_detail(pk):
     return {
         "case_count": case_count,
         "suite_count": suite_count,
+        "leveltag_count": leveltag_count,
         "task_count": task_count,
         "config_count": config_count,
         "variables_count": variables_count,
@@ -43,9 +45,9 @@ def project_init(project):
     # 自动生成默认debugtalk.py
     models.Debugtalk.objects.create(project=project)
     # 自动生成API tree
-    models.Relation.objects.create(project=project)
+    # models.Relation.objects.create(project=project)
     # 自动生成Test Tree
-    models.Relation.objects.create(project=project, type=2)
+    # models.Relation.objects.create(project=project, type=2)
 
 
 def project_end(project):
@@ -53,16 +55,16 @@ def project_end(project):
     """
     models.Debugtalk.objects.filter(project=project).delete()
     models.Config.objects.filter(project=project).delete()
-    models.API.objects.filter(project=project).delete()
-    models.Relation.objects.filter(project=project).delete()
+    models.Case.objects.filter(project=project).delete()
+    # models.Relation.objects.filter(project=project).delete()
     models.Report.objects.filter(project=project).delete()
     models.Variables.objects.filter(project=project).delete()
     celery_models.PeriodicTask.objects.filter(description=project).delete()
 
-    case = models.Case.objects.filter(project=project).values_list('id')
+    suite = models.Suite.objects.filter(project=project).values_list('id')
 
-    for case_id in case:
-        models.CaseStep.objects.filter(case__id=case_id).delete()
+    for suite_id in suite:
+        models.CaseStepInSuite.objects.filter(suite_id=suite_id).delete()
 
 
 def tree_end(params, project):

@@ -43,7 +43,7 @@ def run_case_by_id(request, **kwargs):
     case = models.Case.objects.get(id=kwargs['id'])
     test_case = eval(case.body)
 
-    summary = loader.debug_api(test_case, case.project.id)
+    summary = loader.debug_api(test_case, case.project.id, name=case.name)
 
     return Response(summary)
 

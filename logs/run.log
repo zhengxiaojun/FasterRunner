@@ -50134,3 +50134,2520 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 {
     "token": "0c2fd113f498b140dbba979c07e7cb28"
 }
+2019-11-06 13:39:55,725 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 13:39:55,725 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:39:55,760 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+KeyError: 'request'
+2019-11-06 13:40:06,319 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 13:40:06,319 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:40:06,321 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+KeyError: 'request'
+2019-11-06 13:40:12,898 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "2"
+}
+2019-11-06 13:40:12,898 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:40:56,506 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "2"
+}
+2019-11-06 13:40:56,507 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:04:01,499 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:04:01,500 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:04:01,527 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:04:41,978 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:04:41,978 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:04:41,983 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:04:42,656 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:04:42,656 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:04:42,658 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:05:46,957 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:05:46,958 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:05:46,959 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:05:52,496 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:05:52,497 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:05:52,502 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:05:53,137 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:05:53,137 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:05:53,139 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:07:36,314 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:07:36,315 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:07:36,321 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:07:42,118 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:07:42,118 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:07:42,139 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:07:57,268 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:07:57,271 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:07:57,273 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:10:47,921 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:10:47,924 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:10:47,956 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:10:55,443 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:10:55,444 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:10:55,445 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:11:10,404 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:11:10,405 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:11:10,409 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:11:11,103 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:11:11,104 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:11:11,105 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:12:43,286 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:12:43,286 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:12:43,290 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:25,273 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:25,274 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:25,274 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:29,224 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:29,224 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:29,229 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:30,060 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:30,061 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:30,062 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:30,774 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:30,774 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:30,775 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:31,454 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:31,454 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:31,456 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:32,129 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:32,129 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:32,131 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:32,826 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:32,826 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:32,828 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:33,507 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:33,507 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:33,509 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:34,188 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:34,188 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:34,189 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:13:34,908 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:13:34,908 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:13:34,909 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:14:07,130 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:14:07,131 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:14:07,134 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:14:09,025 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:14:09,026 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:14:09,031 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:14:14,054 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:14:14,054 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:14:14,055 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:14:23,362 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:14:23,362 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:14:23,363 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:14:59,507 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:14:59,507 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:14:59,512 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:15:59,459 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:15:59,459 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:15:59,489 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:17:04,489 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:17:04,490 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:17:04,521 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:17:05,157 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:17:05,158 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:17:05,159 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:19:03,097 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:19:03,097 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:19:03,127 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: string indices must be integers
+2019-11-06 14:19:30,225 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:19:30,226 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:19:41,517 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:19:50,669 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:21:04,312 [INFO] - before process request data:
+[
+    {
+        "id": 407,
+        "name": "地址转经纬度用例二级",
+        "url": "https://restapi.amap.com/v3/geocode/geo",
+        "method": "GET",
+        "project": 1,
+        "leveltag_name": "用例二级",
+        "body": {
+            "name": "地址转经纬度",
+            "leveltag_name": "用例二级",
+            "header": [
+                {
+                    "key": "1111",
+                    "value": "222",
+                    "desc": "333"
+                }
+            ],
+            "request": {
+                "data": [
+                    {
+                        "key": "333",
+                        "value": "444",
+                        "type": 1,
+                        "desc": "888"
+                    }
+                ],
+                "params": [
+                    {
+                        "key": "key",
+                        "value": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                        "type": 1,
+                        "desc": "7e095b9cfcb198b811dadf4f1056fb48"
+                    },
+                    {
+                        "key": "address",
+                        "value": "临汾小区",
+                        "type": 1,
+                        "desc": ""
+                    },
+                    {
+                        "key": "city",
+                        "value": "上海市",
+                        "type": 1,
+                        "desc": ""
+                    }
+                ],
+                "json_data": ""
+            },
+            "variables": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": "",
+                    "type": 1
+                }
+            ],
+            "hooks": [
+                {
+                    "setup": "",
+                    "teardown": ""
+                }
+            ],
+            "times": 1,
+            "method": "GET",
+            "url": "https://restapi.amap.com/v3/geocode/geo",
+            "validate": [
+                {
+                    "expect": "",
+                    "actual": "",
+                    "comparator": "equals",
+                    "type": 1
+                }
+            ],
+            "extract": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": ""
+                }
+            ]
+        }
+    },
+    {
+        "id": 408,
+        "name": "地址转经纬度 Copy",
+        "url": "https://restapi.amap.com/v3/geocode/geo",
+        "method": "GET",
+        "project": 1,
+        "leveltag_name": "用例二级",
+        "body": {
+            "name": "地址转经纬度 Copy",
+            "leveltag_name": "用例二级",
+            "header": [
+                {
+                    "key": "1111",
+                    "value": "222",
+                    "desc": "333"
+                },
+                {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "desc": "666"
+                }
+            ],
+            "request": {
+                "data": [
+                    {
+                        "key": "",
+                        "value": "",
+                        "desc": "",
+                        "type": 1
+                    }
+                ],
+                "params": [
+                    {
+                        "key": "key",
+                        "value": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                        "type": 1,
+                        "desc": "7e095b9cfcb198b811dadf4f1056fb48"
+                    },
+                    {
+                        "key": "address",
+                        "value": "临汾小区",
+                        "type": 1,
+                        "desc": ""
+                    },
+                    {
+                        "key": "city",
+                        "value": "上海市",
+                        "type": 1,
+                        "desc": ""
+                    }
+                ],
+                "json_data": "{\n    \"a\": 1\n}"
+            },
+            "variables": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": "",
+                    "type": 1
+                }
+            ],
+            "hooks": [
+                {
+                    "setup": "",
+                    "teardown": ""
+                }
+            ],
+            "times": 1,
+            "method": "GET",
+            "url": "https://restapi.amap.com/v3/geocode/geo",
+            "validate": [
+                {
+                    "expect": "",
+                    "actual": "",
+                    "comparator": "equals",
+                    "type": 1
+                }
+            ],
+            "extract": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": ""
+                }
+            ]
+        }
+    }
+]
+2019-11-06 14:21:04,313 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:21:10,011 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:21:10,012 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:21:45,899 [INFO] - before process request data:
+[
+    {
+        "id": 410,
+        "name": "地址转经纬度 Copy",
+        "url": "https://restapi.amap.com/v3/geocode/geo",
+        "method": "GET",
+        "project": 1,
+        "leveltag_name": "用例二级",
+        "body": {
+            "name": "地址转经纬度 Copy",
+            "leveltag_name": "用例二级",
+            "header": [
+                {
+                    "key": "1111",
+                    "value": "222",
+                    "desc": "333"
+                },
+                {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "desc": "666"
+                }
+            ],
+            "request": {
+                "data": [
+                    {
+                        "key": "",
+                        "value": "",
+                        "desc": "",
+                        "type": 1
+                    }
+                ],
+                "params": [
+                    {
+                        "key": "key",
+                        "value": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                        "type": 1,
+                        "desc": "7e095b9cfcb198b811dadf4f1056fb48"
+                    },
+                    {
+                        "key": "address",
+                        "value": "临汾小区",
+                        "type": 1,
+                        "desc": ""
+                    },
+                    {
+                        "key": "city",
+                        "value": "上海市",
+                        "type": 1,
+                        "desc": ""
+                    }
+                ],
+                "json_data": "{\n    \"a\": 1\n}"
+            },
+            "variables": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": "",
+                    "type": 1
+                }
+            ],
+            "hooks": [
+                {
+                    "setup": "",
+                    "teardown": ""
+                }
+            ],
+            "times": 1,
+            "method": "GET",
+            "url": "https://restapi.amap.com/v3/geocode/geo",
+            "validate": [
+                {
+                    "expect": "",
+                    "actual": "",
+                    "comparator": "equals",
+                    "type": 1
+                }
+            ],
+            "extract": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": ""
+                }
+            ]
+        }
+    },
+    {
+        "id": 409,
+        "name": "地址转经纬度用例二级",
+        "url": "https://restapi.amap.com/v3/geocode/geo",
+        "method": "GET",
+        "project": 1,
+        "leveltag_name": "用例二级",
+        "body": {
+            "name": "地址转经纬度",
+            "leveltag_name": "用例二级",
+            "header": [
+                {
+                    "key": "1111",
+                    "value": "222",
+                    "desc": "333"
+                }
+            ],
+            "request": {
+                "data": [
+                    {
+                        "key": "333",
+                        "value": "444",
+                        "type": 1,
+                        "desc": "888"
+                    }
+                ],
+                "params": [
+                    {
+                        "key": "key",
+                        "value": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                        "type": 1,
+                        "desc": "7e095b9cfcb198b811dadf4f1056fb48"
+                    },
+                    {
+                        "key": "address",
+                        "value": "临汾小区",
+                        "type": 1,
+                        "desc": ""
+                    },
+                    {
+                        "key": "city",
+                        "value": "上海市",
+                        "type": 1,
+                        "desc": ""
+                    }
+                ],
+                "json_data": ""
+            },
+            "variables": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": "",
+                    "type": 1
+                }
+            ],
+            "hooks": [
+                {
+                    "setup": "",
+                    "teardown": ""
+                }
+            ],
+            "times": 1,
+            "method": "GET",
+            "url": "https://restapi.amap.com/v3/geocode/geo",
+            "validate": [
+                {
+                    "expect": "",
+                    "actual": "",
+                    "comparator": "equals",
+                    "type": 1
+                }
+            ],
+            "extract": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": ""
+                }
+            ]
+        }
+    }
+]
+2019-11-06 14:21:45,903 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:21:49,140 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:21:49,140 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:21:57,720 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:21:57,721 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:22:23,107 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:22:23,107 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:22:38,155 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:22:58,563 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:23:35,366 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:23:48,478 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:24:03,118 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:24:15,953 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:24:33,239 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 SCREEN-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:24:33,240 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:24:42,728 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:25:33,229 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 UNITED-CIIMC-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:25:33,229 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:25:49,697 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:31:59,405 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:31:59,410 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:32:09,748 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 SCREEN-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:32:09,748 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:32:22,383 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:32:22,383 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:32:30,168 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 UNITED-CIIMC-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 14:32:30,168 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:33:07,664 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:33:14,082 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "大屏",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 14:33:14,082 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:33:17,299 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:33:35,993 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "SCREEN",
+    "level": "2",
+    "parentName": "用例一级",
+    "ltype": "1"
+}
+2019-11-06 14:33:35,993 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:33:59,445 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "CIIMC-FE-API",
+    "level": "2",
+    "parentName": "大屏",
+    "ltype": "1"
+}
+2019-11-06 14:33:59,445 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:34:32,534 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "UNITED-CIIMC-API",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 14:34:32,534 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:34:35,418 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:34:39,281 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "CIIMC-FE-API",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 14:34:39,281 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:35:00,423 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:35:08,229 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "SCREEN",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 14:35:08,229 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:40:06,517 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:40:20,366 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "授权",
+                "address": "地址",
+                "city": "城市"
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "大屏",
+    "times": 1
+}
+2019-11-06 14:40:20,367 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:40:43,800 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:41:25,032 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 SCREEN-API.postman_collection.json",
+    "leveltagName": "SCREEN",
+    "folder_level": "1"
+}
+2019-11-06 14:41:25,032 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:41:35,564 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 14:44:52,560 [WARNING] - Not Found: /api/fastrunner/case/
+2019-11-06 14:46:13,298 [WARNING] - Not Found: /api/fastrunner/case/
+2019-11-06 14:46:15,607 [WARNING] - Not Found: /api/fastrunner/case/
+2019-11-06 14:47:13,257 [ERROR] - Internal Server Error: /api/fastrunner/case/
+Traceback (most recent call last):
+KeyError: 'page'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+django.utils.datastructures.MultiValueDictKeyError: 'page'
+2019-11-06 14:49:43,677 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 14:49:45,176 [ERROR] - Internal Server Error: /api/fastrunner/case/
+Traceback (most recent call last):
+AttributeError: 'MyPageNumberPagination' object has no attribute 'page'
+2019-11-06 14:53:09,228 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 14:55:08,493 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "222",
+    "case_list": [
+        {
+            "case_id": 1428,
+            "case_name": "地理库统计数据",
+            "step": 0
+        },
+        {
+            "case_id": 1427,
+            "case_name": "街面管理，环卫市容占比以及其余4种占比",
+            "step": 1
+        },
+        {
+            "case_id": 1426,
+            "case_name": "街面管理，案件类型占比",
+            "step": 2
+        }
+    ],
+    "length": 3,
+    "leveltag_name": "套件二级"
+}
+2019-11-06 14:55:08,494 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:55:08,553 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 14:55:11,774 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:55:14,459 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "测试套件",
+    "case_list": [
+        {
+            "case_id": 1,
+            "case_name": "地址转经纬度",
+            "step": 0
+        }
+    ],
+    "length": 1,
+    "leveltag_name": "套件二级"
+}
+2019-11-06 14:55:14,459 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:55:14,510 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 14:55:22,284 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:55:23,234 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "222",
+    "case_list": [
+        {
+            "case_id": 1428,
+            "case_name": "地理库统计数据",
+            "step": 0
+        },
+        {
+            "case_id": 1427,
+            "case_name": "街面管理，环卫市容占比以及其余4种占比",
+            "step": 1
+        },
+        {
+            "case_id": 1426,
+            "case_name": "街面管理，案件类型占比",
+            "step": 2
+        }
+    ],
+    "length": 3,
+    "leveltag_name": "套件二级"
+}
+2019-11-06 14:55:23,235 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:55:23,292 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 14:55:27,948 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:55:50,317 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 14:55:50,372 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:06:02,205 [WARNING] - Unauthorized: /api/fastrunner/leveltag/
+2019-11-06 15:06:37,743 [INFO] - before process request data:
+{
+    "name": "测试项目",
+    "desc": "测试",
+    "responsible": "jack",
+    "id": ""
+}
+2019-11-06 15:06:37,743 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:06:37,793 [ERROR] - Internal Server Error: /api/fastrunner/project/
+Traceback (most recent call last):
+AttributeError: module 'fastrunner.models' has no attribute 'Relation'
+2019-11-06 15:11:41,398 [INFO] - before process request data:
+{
+    "name": "测试项目",
+    "desc": "测试",
+    "responsible": "jack",
+    "id": ""
+}
+2019-11-06 15:11:41,402 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:12:01,827 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:12:01,873 [ERROR] - Internal Server Error: /api/fastrunner/project/1/
+Traceback (most recent call last):
+_mysql_exceptions.ProgrammingError: (1146, "Table 'fastrunner.djcelery_periodictask' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+django.db.utils.ProgrammingError: (1146, "Table 'fastrunner.djcelery_periodictask' doesn't exist")
+2019-11-06 15:15:17,906 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:15:23,070 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:15:25,166 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:16:49,655 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "111",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:16:49,655 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:16:53,655 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "222",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:16:53,656 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:16:55,027 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:16:56,074 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "111",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:16:56,075 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:16:59,804 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:17:00,669 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "111",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:17:00,669 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:20:46,570 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "111",
+    "folder_level": "1"
+}
+2019-11-06 15:20:46,570 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:20:55,968 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:21:01,198 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:22:23,678 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:22:34,218 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:22:35,182 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "222",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:22:35,182 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:22:36,755 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:22:39,272 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:22:40,230 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "111",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:22:40,230 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:22:51,798 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:23:25,935 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:23:46,331 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:24:12,433 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "333",
+    "level": "1",
+    "parentName": "",
+    "ltype": "2"
+}
+2019-11-06 15:24:12,433 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:24:13,838 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:24:21,047 [INFO] - before process request data:
+{
+    "project": "1",
+    "name": "666",
+    "case_list": [
+        {
+            "case_id": 2,
+            "case_name": "地址转经纬度 Copy",
+            "step": 0
+        }
+    ],
+    "length": 1,
+    "leveltag_name": "333"
+}
+2019-11-06 15:24:21,048 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:24:21,089 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 15:24:25,756 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:24:38,242 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:24:42,692 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:24:48,199 [INFO] - before process request data:
+{
+    "id": 1
+}
+2019-11-06 15:24:48,199 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:30:06,265 [INFO] - before process request data:
+{
+    "name": "测试项目",
+    "desc": "测试",
+    "responsible": "jack",
+    "id": ""
+}
+2019-11-06 15:30:06,265 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:30:45,886 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:30:58,968 [INFO] - before process request data:
+{
+    "project": 2,
+    "name": "SCREEN",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:30:58,969 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:31:07,961 [INFO] - before process request data:
+{
+    "project": 2,
+    "name": "CIIMC-FE-API",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:31:07,961 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:31:31,283 [INFO] - before process request data:
+{
+    "project": 2,
+    "name": "UNITED-CIIMC-API",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:31:31,283 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:31:46,751 [INFO] - before process request data:
+{
+    "project": 2,
+    "name": "SCREEN",
+    "level": "1",
+    "parentName": "",
+    "ltype": "2"
+}
+2019-11-06 15:31:46,752 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:31:50,377 [INFO] - before process request data:
+{
+    "project": 2,
+    "name": "SCREEN",
+    "level": "1",
+    "parentName": "",
+    "ltype": "2"
+}
+2019-11-06 15:31:50,377 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:32:21,216 [INFO] - before process request data:
+{
+    "project": 2,
+    "name": "测试套件",
+    "level": "1",
+    "parentName": "",
+    "ltype": "2"
+}
+2019-11-06 15:32:21,217 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:32:34,610 [INFO] - before process request data:
+{
+    "project": 2,
+    "filetype": "1",
+    "filename": "151 UNITED-CIIMC-API.postman_collection.json",
+    "leveltagName": "UNITED-CIIMC-API",
+    "folder_level": "1"
+}
+2019-11-06 15:32:34,610 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:32:57,468 [INFO] - before process request data:
+{
+    "project": 2,
+    "filetype": "1",
+    "filename": "151 SCREEN-API.postman_collection.json",
+    "leveltagName": "SCREEN",
+    "folder_level": "1"
+}
+2019-11-06 15:32:57,469 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:40:37,260 [ERROR] - Internal Server Error: /api/fastrunner/case/
+Traceback (most recent call last):
+KeyError: 'need_page'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+django.utils.datastructures.MultiValueDictKeyError: 'need_page'
+2019-11-06 15:40:39,066 [ERROR] - Internal Server Error: /api/fastrunner/case/
+Traceback (most recent call last):
+KeyError: 'need_page'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+django.utils.datastructures.MultiValueDictKeyError: 'need_page'
+2019-11-06 15:40:39,926 [ERROR] - Internal Server Error: /api/fastrunner/case/
+Traceback (most recent call last):
+KeyError: 'need_page'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+django.utils.datastructures.MultiValueDictKeyError: 'need_page'
+2019-11-06 15:42:40,336 [INFO] - before process request data:
+{
+    "project": 2,
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "CIIMC-FE-API",
+    "folder_level": "1"
+}
+2019-11-06 15:42:40,338 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:42:58,040 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:44:01,875 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 15:44:22,560 [INFO] - before process request data:
+{
+    "project": 2,
+    "name": "333",
+    "case_list": [
+        {
+            "case_id": 5,
+            "case_name": "街道的事件明细，time_range形式",
+            "step": 0
+        },
+        {
+            "case_id": 4,
+            "case_name": "街道的事件明细，today形式",
+            "step": 1
+        },
+        {
+            "case_id": 3,
+            "case_name": "街道的事件明细，yesterday形式",
+            "step": 2
+        }
+    ],
+    "length": 3,
+    "leveltag_name": "测试套件"
+}
+2019-11-06 15:44:22,560 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:44:22,616 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 15:45:30,439 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:46:04,882 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:46:08,253 [INFO] - before process request data:
+{
+    "id": 2,
+    "code": "# write you code"
+}
+2019-11-06 15:46:08,254 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:46:20,011 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:46:28,993 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:47:12,574 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:49:46,588 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:49:55,388 [INFO] - before process request data:
+{
+    "id": 2,
+    "code": "# write you code\nprint('aaaa')"
+}
+2019-11-06 15:49:55,389 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:49:59,248 [INFO] - before process request data:
+{
+    "id": 2,
+    "code": "# write you code\nprint('aaaa')"
+}
+2019-11-06 15:49:59,249 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:49:59,284 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:50:02,389 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:50:04,330 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:50:07,218 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:54:37,071 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:57:51,143 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 15:57:54,306 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:57:54,353 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 15:58:22,209 [INFO] - before process request data:
+{
+    "project": 2,
+    "name": "Amap",
+    "level": "1",
+    "parentName": "",
+    "ltype": "1"
+}
+2019-11-06 15:58:22,209 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:58:33,159 [INFO] - before process request data:
+{
+    "project": 2,
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "Amap",
+    "folder_level": "1"
+}
+2019-11-06 15:58:33,159 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:58:35,878 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:58:38,963 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:59:11,227 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "7e095b9cfcb198b811dadf4f1056fb48",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": []
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": 2,
+    "leveltag_name": "Amap",
+    "times": 1
+}
+2019-11-06 15:59:11,228 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 15:59:39,477 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:00:05,607 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:00:21,984 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:00:32,699 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "7e095b9cfcb198b811dadf4f1056fb48",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "111",
+                    "222"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "times": 1,
+    "project": 2,
+    "leveltag_name": "Amap"
+}
+2019-11-06 16:00:32,701 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:01:00,282 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "7e095b9cfcb198b811dadf4f1056fb48",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "times": 1,
+    "project": 2,
+    "leveltag_name": "Amap"
+}
+2019-11-06 16:01:00,282 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:01:43,470 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "7e095b9cfcb198b811dadf4f1056fb48",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "json",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "times": 1,
+    "project": 2,
+    "leveltag_name": "Amap"
+}
+2019-11-06 16:01:43,473 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:02:00,742 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "7e095b9cfcb198b811dadf4f1056fb48",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "times": 1,
+    "project": 2,
+    "leveltag_name": "Amap"
+}
+2019-11-06 16:02:00,744 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:02:14,253 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "7e095b9cfcb198b811dadf4f1056fb48",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": 2,
+    "leveltag_name": "Amap",
+    "times": 1
+}
+2019-11-06 16:02:14,256 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:02:15,939 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:02:19,251 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:02:28,196 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:06:11,722 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 16:06:14,414 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:09:08,000 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:09:40,972 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:10:35,233 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:26:51,916 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:27:08,205 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:27:10,238 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "7e095b9cfcb198b811dadf4f1056fb48",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "times": 1,
+    "project": 2,
+    "leveltag_name": "Amap"
+}
+2019-11-06 16:27:10,238 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:27:22,935 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 16:27:34,360 [INFO] - before process request data:
+{
+    "project": 2,
+    "name": "测试套件",
+    "case_list": [
+        {
+            "case_id": 387,
+            "case_name": "地址转经纬度",
+            "step": 0
+        }
+    ],
+    "length": 1,
+    "leveltag_name": "测试套件"
+}
+2019-11-06 16:27:34,361 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:27:34,407 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 16:27:36,404 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2"
+}
+2019-11-06 16:27:54,643 [WARNING] - Not Found: /api/fastrunner/reports/fonts/roboto/Roboto-Regular.woff2
+2019-11-06 16:27:54,653 [WARNING] - Not Found: /api/fastrunner/reports/fonts/roboto/Roboto-Regular.woff
+2019-11-06 16:27:54,673 [WARNING] - Not Found: /api/fastrunner/reports/fonts/roboto/Roboto-Regular.ttf
+2019-11-06 16:27:54,711 [WARNING] - Not Found: /favicon.ico
+2019-11-06 16:29:08,902 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 16:29:15,014 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 16:30:10,717 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:30:27,820 [INFO] - before process request data:
+{
+    "project": 2,
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "CIIMC-FE-API",
+    "folder_level": "1"
+}
+2019-11-06 16:30:27,821 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
+2019-11-06 16:30:48,967 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103",
+    "project": "2",
+    "search": ""
+}
+2019-11-06 16:30:50,890 [INFO] - before process request params:
+{
+    "token": "d904910f3e6769953e8c9c0516809103"
+}
