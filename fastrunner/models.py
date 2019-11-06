@@ -56,7 +56,7 @@ class Case(BaseTable):
         verbose_name = "用例信息"
         db_table = "Case"
 
-    name = models.CharField("接口名称", null=False, max_length=100)
+    name = models.CharField("用例名称", null=False, max_length=100)
     body = models.TextField("主体信息", null=False)
     url = models.CharField("请求地址", null=False, max_length=200)
     method = models.CharField("请求方式", null=False, max_length=10)

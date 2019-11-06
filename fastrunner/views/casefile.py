@@ -62,7 +62,6 @@ class FileParse(object):
         """
         params = {}
         desc_params = {}
-        print(case["request"]["url"])
 
         if 'query' in case["request"]["url"]:
             for param in case["request"]["url"]["query"]:
@@ -74,8 +73,66 @@ class FileParse(object):
 
         return params, desc_params
 
+    def parseHeaders(self, case):
+        """
+        :param case:
+        :return: dict
+        """
+        headers = {}
+        desc_headers = {}
+
+        if 'header' in case["request"]:
+            for hd in case["request"]["header"]:
+                headers[hd["key"]] = hd["value"]
+                if 'description' in hd:
+                    desc_headers[hd["key"]] = hd["description"]
+                else:
+                    desc_headers[hd["key"]] = ''
+
+        return headers, desc_headers
+
+    def parseFormData(self, case):
+        """
+        :param case:
+        :return: dict
+        """
+        formdatas = {}
+        desc_formdatas = {}
+
+        if 'body' in case["request"] and case["request"]["body"]["mode"] == "formdata":
+            for bd in case["request"]["body"]["formdata"]:
+                formdatas[bd["key"]] = bd["value"]
+                if 'description' in bd:
+                    desc_formdatas[bd["key"]] = bd["description"]
+                else:
+                    desc_formdatas[bd["key"]] = ''
+
+        return formdatas, desc_formdatas
+
+    def parseRawJson(self, case):
+        """
+        :param case:
+        :return: dict
+        """
+        rawjson = {}
+
+        if 'body' in case["request"] and case["request"]["body"]["mode"] == "raw":
+            try:
+                rawjson = json.loads(case["request"]["body"]["raw"])
+            except Exception as e:
+                print(e)
+                rawjson = {}
+                # if 'options' in case["request"]["body"]:
+                #     if case["request"]["body"]["options"]["raw"]["language"] == 'json':
+                #         rawjson = json.loads(case["request"]["body"]["raw"])
+
+        return rawjson
+
     def parseBody(self, case, leveltagName):
         params, desc_params = self.parseParams(case)
+        headers, desc_headers = self.parseHeaders(case)
+        formdatas, desc_formdatas = self.parseFormData(case)
+        rawjson = self.parseRawJson(case)
 
         body = {
             'name': case["name"],
@@ -85,11 +142,14 @@ class FileParse(object):
                 'url': self.parseUrl(case["request"]["url"]["raw"]),
                 'method': case["request"]["method"],
                 'verify': False,
-                'params': params
+                'headers': headers,
+                'params': params,
+                'data': formdatas,
+                'json': rawjson
             },
             'desc': {
-                'header': {},
-                'data': {},
+                'header': desc_headers,
+                'data': desc_formdatas,
                 'files': {},
                 'params': desc_params,
                 'variables': {},

@@ -48319,3 +48319,1818 @@ KeyError: 'request'
 2019-11-05 21:55:30,831 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
 Traceback (most recent call last):
 KeyError: 'request'
+2019-11-06 09:19:19,353 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 09:19:59,075 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 09:22:46,214 [INFO] - before process request data:
+{
+    "header": {
+        "header": {
+            "header1": "header2"
+        },
+        "desc": {
+            "header1": "header3"
+        }
+    },
+    "request": {
+        "form": {
+            "data": {
+                "form-data1": "form-data2"
+            },
+            "desc": {
+                "form-data1": "form-data3"
+            }
+        },
+        "json": {
+            "a": 1
+        },
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [
+            {
+                "extract1": "extract2"
+            }
+        ],
+        "desc": {
+            "extract1": "extract3"
+        }
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [
+            {
+                "var1": "var2"
+            }
+        ],
+        "desc": {
+            "var1": "var3"
+        }
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 09:22:46,215 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 09:57:23,340 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 09:57:24,798 [INFO] - before process request data:
+{
+    "header": {
+        "header": {
+            "header1": "header2"
+        },
+        "desc": {
+            "header1": "header3"
+        }
+    },
+    "request": {
+        "form": {
+            "data": {
+                "form-data1": "form-data2"
+            },
+            "desc": {
+                "form-data1": "form-data3"
+            }
+        },
+        "json": {
+            "a": 1
+        },
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [
+            {
+                "extract1": "extract2"
+            }
+        ],
+        "desc": {
+            "extract1": "extract3"
+        }
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [
+            {
+                "var1": "var2"
+            }
+        ],
+        "desc": {
+            "var1": "var3"
+        }
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 09:57:24,798 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 09:57:24,849 [ERROR] - Internal Server Error: /api/fastrunner/case/1/
+Traceback (most recent call last):
+TypeError: expected string or bytes-like object
+2019-11-06 10:00:58,709 [INFO] - before process request data:
+{
+    "header": {
+        "header": {
+            "header1": "header2"
+        },
+        "desc": {
+            "header1": "header3"
+        }
+    },
+    "request": {
+        "form": {
+            "data": {
+                "form-data1": "form-data2"
+            },
+            "desc": {
+                "form-data1": "form-data3"
+            }
+        },
+        "json": {
+            "a": 1
+        },
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [
+            {
+                "extract1": "extract2"
+            }
+        ],
+        "desc": {
+            "extract1": "extract3"
+        }
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [
+            {
+                "var1": "var2"
+            }
+        ],
+        "desc": {
+            "var1": "var3"
+        }
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 10:00:58,710 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 10:04:25,689 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 10:07:50,764 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 10:39:15,845 [INFO] - before process request data:
+{
+    "header": {
+        "header": {
+            "header1": "header2",
+            "header11": "header12"
+        },
+        "desc": {
+            "header1": "header3",
+            "header11": "header13"
+        }
+    },
+    "request": {
+        "form": {
+            "data": {
+                "form-data1": "form-data2",
+                "form-data11": "form-data12"
+            },
+            "desc": {
+                "form-data1": "form-data3",
+                "form-data11": "form-data13"
+            }
+        },
+        "json": {
+            "a": 1
+        },
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [
+            {
+                "extract1": "extract2"
+            }
+        ],
+        "desc": {
+            "extract1": "extract3"
+        }
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [
+            {
+                "var1": "var2"
+            }
+        ],
+        "desc": {
+            "var1": "var3"
+        }
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 10:39:15,846 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:03:12,463 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:03:31,115 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:03:31,115 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:03:31,139 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+KeyError: 'options'
+2019-11-06 11:04:18,065 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:04:18,066 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:04:18,073 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+KeyError: 'options'
+2019-11-06 11:07:20,253 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:07:20,254 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:07:26,075 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:07:49,189 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:09:37,698 [INFO] - before process request data:
+[
+    {
+        "id": 230,
+        "name": "地址转经纬度 Copy",
+        "url": "https://restapi.amap.com/v3/geocode/geo",
+        "method": "GET",
+        "project": 1,
+        "leveltag_name": "用例二级",
+        "body": {
+            "name": "地址转经纬度 Copy",
+            "leveltag_name": "用例二级",
+            "header": [
+                {
+                    "key": "1111",
+                    "value": "222",
+                    "desc": "333"
+                },
+                {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "desc": "666"
+                }
+            ],
+            "request": {
+                "data": [
+                    {
+                        "key": "",
+                        "value": "",
+                        "desc": "",
+                        "type": 1
+                    }
+                ],
+                "params": [
+                    {
+                        "key": "key",
+                        "value": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                        "type": 1,
+                        "desc": "7e095b9cfcb198b811dadf4f1056fb48"
+                    },
+                    {
+                        "key": "address",
+                        "value": "临汾小区",
+                        "type": 1,
+                        "desc": ""
+                    },
+                    {
+                        "key": "city",
+                        "value": "上海市",
+                        "type": 1,
+                        "desc": ""
+                    }
+                ],
+                "json_data": "{\n    \"a\": 1\n}"
+            },
+            "variables": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": "",
+                    "type": 1
+                }
+            ],
+            "hooks": [
+                {
+                    "setup": "",
+                    "teardown": ""
+                }
+            ],
+            "times": 1,
+            "method": "GET",
+            "url": "https://restapi.amap.com/v3/geocode/geo",
+            "validate": [
+                {
+                    "expect": "",
+                    "actual": "",
+                    "comparator": "equals",
+                    "type": 1
+                }
+            ],
+            "extract": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": ""
+                }
+            ]
+        }
+    },
+    {
+        "id": 229,
+        "name": "地址转经纬度",
+        "url": "https://restapi.amap.com/v3/geocode/geo",
+        "method": "GET",
+        "project": 1,
+        "leveltag_name": "用例二级",
+        "body": {
+            "name": "地址转经纬度",
+            "leveltag_name": "用例二级",
+            "header": [
+                {
+                    "key": "1111",
+                    "value": "222",
+                    "desc": "333"
+                }
+            ],
+            "request": {
+                "data": [
+                    {
+                        "key": "333",
+                        "value": "444",
+                        "type": 1,
+                        "desc": "888"
+                    }
+                ],
+                "params": [
+                    {
+                        "key": "key",
+                        "value": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                        "type": 1,
+                        "desc": "7e095b9cfcb198b811dadf4f1056fb48"
+                    },
+                    {
+                        "key": "address",
+                        "value": "临汾小区",
+                        "type": 1,
+                        "desc": ""
+                    },
+                    {
+                        "key": "city",
+                        "value": "上海市",
+                        "type": 1,
+                        "desc": ""
+                    }
+                ],
+                "json_data": ""
+            },
+            "variables": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": "",
+                    "type": 1
+                }
+            ],
+            "hooks": [
+                {
+                    "setup": "",
+                    "teardown": ""
+                }
+            ],
+            "times": 1,
+            "method": "GET",
+            "url": "https://restapi.amap.com/v3/geocode/geo",
+            "validate": [
+                {
+                    "expect": "",
+                    "actual": "",
+                    "comparator": "equals",
+                    "type": 1
+                }
+            ],
+            "extract": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": ""
+                }
+            ]
+        }
+    }
+]
+2019-11-06 11:09:37,702 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:09:50,423 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:09:50,424 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:09:52,612 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:10:03,087 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:13:24,546 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:21:40,327 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:22:35,934 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {
+            "a": 1
+        },
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 11:22:35,934 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:26:34,522 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:26:50,509 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {
+                "333": "444"
+            },
+            "desc": {
+                "333": "888"
+            }
+        },
+        "json": "{}",
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "7e095b9cfcb198b811dadf4f1056fb48",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": []
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 11:26:50,509 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:26:52,122 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:26:56,004 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:27:00,185 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:27:30,226 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:30:12,986 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:30:15,936 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {
+            "a": 1
+        },
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 11:30:15,937 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:32:03,482 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:32:13,046 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "",
+                "address": "",
+                "city": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 11:32:13,047 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:32:14,261 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:32:40,201 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "授权",
+                "address": "地址",
+                "city": "城市"
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 11:32:40,201 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:32:42,782 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:32:44,659 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "授权",
+                "address": "地址",
+                "city": "城市"
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "times": 1,
+    "project": "1",
+    "leveltag_name": "用例二级"
+}
+2019-11-06 11:32:44,662 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:34:24,468 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:34:25,799 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "key": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                "address": "临汾小区",
+                "city": "上海市"
+            },
+            "desc": {
+                "key": "授权",
+                "address": "地址",
+                "city": "城市"
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200
+                ]
+            },
+            {
+                "equals": [
+                    "json.status",
+                    "1"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "https://restapi.amap.com/v3/geocode/geo",
+    "method": "GET",
+    "name": "地址转经纬度",
+    "project": "1",
+    "leveltag_name": "用例二级",
+    "times": 1
+}
+2019-11-06 11:34:25,800 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:38:30,333 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:38:30,334 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:38:30,360 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+2019-11-06 11:40:04,590 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:40:04,590 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:40:04,596 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+2019-11-06 11:40:05,243 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:40:05,243 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:40:05,244 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+2019-11-06 11:40:19,261 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:40:19,262 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:40:19,264 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+2019-11-06 11:40:20,035 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:40:20,035 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:40:20,036 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+2019-11-06 11:40:39,392 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:40:39,393 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:40:39,398 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+2019-11-06 11:40:40,028 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:40:40,028 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:40:40,029 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+2019-11-06 11:41:20,364 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:41:20,364 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:41:20,369 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+2019-11-06 11:42:56,236 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:42:56,236 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:43:21,325 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:45:05,276 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:45:05,277 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:45:07,129 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:46:37,112 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "测试.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "1"
+}
+2019-11-06 11:46:37,112 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:46:39,359 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:47:16,464 [INFO] - before process request data:
+[
+    {
+        "id": 237,
+        "name": "地址转经纬度用例二级",
+        "url": "https://restapi.amap.com/v3/geocode/geo",
+        "method": "GET",
+        "project": 1,
+        "leveltag_name": "用例二级",
+        "body": {
+            "name": "地址转经纬度",
+            "leveltag_name": "用例二级",
+            "header": [
+                {
+                    "key": "1111",
+                    "value": "222",
+                    "desc": "333"
+                }
+            ],
+            "request": {
+                "data": [
+                    {
+                        "key": "333",
+                        "value": "444",
+                        "type": 1,
+                        "desc": "888"
+                    }
+                ],
+                "params": [
+                    {
+                        "key": "key",
+                        "value": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                        "type": 1,
+                        "desc": "7e095b9cfcb198b811dadf4f1056fb48"
+                    },
+                    {
+                        "key": "address",
+                        "value": "临汾小区",
+                        "type": 1,
+                        "desc": ""
+                    },
+                    {
+                        "key": "city",
+                        "value": "上海市",
+                        "type": 1,
+                        "desc": ""
+                    }
+                ],
+                "json_data": ""
+            },
+            "variables": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": "",
+                    "type": 1
+                }
+            ],
+            "hooks": [
+                {
+                    "setup": "",
+                    "teardown": ""
+                }
+            ],
+            "times": 1,
+            "method": "GET",
+            "url": "https://restapi.amap.com/v3/geocode/geo",
+            "validate": [
+                {
+                    "expect": "",
+                    "actual": "",
+                    "comparator": "equals",
+                    "type": 1
+                }
+            ],
+            "extract": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": ""
+                }
+            ]
+        }
+    },
+    {
+        "id": 238,
+        "name": "地址转经纬度 Copy",
+        "url": "https://restapi.amap.com/v3/geocode/geo",
+        "method": "GET",
+        "project": 1,
+        "leveltag_name": "用例二级",
+        "body": {
+            "name": "地址转经纬度 Copy",
+            "leveltag_name": "用例二级",
+            "header": [
+                {
+                    "key": "1111",
+                    "value": "222",
+                    "desc": "333"
+                },
+                {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "desc": "666"
+                }
+            ],
+            "request": {
+                "data": [
+                    {
+                        "key": "",
+                        "value": "",
+                        "desc": "",
+                        "type": 1
+                    }
+                ],
+                "params": [
+                    {
+                        "key": "key",
+                        "value": "7ec25a9c6716bb26f0d25e9fdfa012b8",
+                        "type": 1,
+                        "desc": "7e095b9cfcb198b811dadf4f1056fb48"
+                    },
+                    {
+                        "key": "address",
+                        "value": "临汾小区",
+                        "type": 1,
+                        "desc": ""
+                    },
+                    {
+                        "key": "city",
+                        "value": "上海市",
+                        "type": 1,
+                        "desc": ""
+                    }
+                ],
+                "json_data": "{\n    \"a\": 1\n}"
+            },
+            "variables": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": "",
+                    "type": 1
+                }
+            ],
+            "hooks": [
+                {
+                    "setup": "",
+                    "teardown": ""
+                }
+            ],
+            "times": 1,
+            "method": "GET",
+            "url": "https://restapi.amap.com/v3/geocode/geo",
+            "validate": [
+                {
+                    "expect": "",
+                    "actual": "",
+                    "comparator": "equals",
+                    "type": 1
+                }
+            ],
+            "extract": [
+                {
+                    "key": "",
+                    "value": "",
+                    "desc": ""
+                }
+            ]
+        }
+    }
+]
+2019-11-06 11:47:16,466 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:48:49,352 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "2"
+}
+2019-11-06 11:48:49,355 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:48:49,386 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+KeyError: 'options'
+2019-11-06 11:49:44,194 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "2"
+}
+2019-11-06 11:49:44,195 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:49:44,204 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+KeyError: 'options'
+2019-11-06 11:52:06,234 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "2"
+}
+2019-11-06 11:52:06,234 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:52:19,019 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:52:33,569 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:52:41,272 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:52:53,485 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:53:22,751 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:53:43,704 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:54:11,160 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:55:35,722 [WARNING] - Not Found: /api/fastrunner/case/
+2019-11-06 11:56:01,612 [WARNING] - Not Found: /api/fastrunner/case/
+2019-11-06 11:56:43,594 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:59:07,476 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "2"
+}
+2019-11-06 11:59:07,476 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 11:59:07,508 [ERROR] - Internal Server Error: /api/fastrunner/case/import/
+Traceback (most recent call last):
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-11-06 13:16:55,346 [INFO] - before process request data:
+{
+    "project": "1",
+    "filetype": "1",
+    "filename": "151 CIIMC-FE-API.postman_collection.json",
+    "leveltagName": "用例二级",
+    "folder_level": "2"
+}
+2019-11-06 13:16:55,346 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:17:22,454 [WARNING] - Not Found: /api/fastrunner/case/
+2019-11-06 13:17:40,091 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:26:05,666 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:27:50,734 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 13:27:54,139 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": "2"
+}
+2019-11-06 13:27:56,181 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28",
+    "project": "1",
+    "search": ""
+}
+2019-11-06 13:28:54,717 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:29:11,445 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:29:35,470 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:29:45,354 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:30:23,328 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:32:18,603 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "token": "e1550202429f43c7bf71043868712642"
+            },
+            "desc": {
+                "token": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": []
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "http://10.101.12.4:15905/streamer-fe/api/monitor",
+    "method": "GET",
+    "name": "streamer 监控",
+    "times": 1,
+    "project": "1",
+    "leveltag_name": "用例二级"
+}
+2019-11-06 13:32:18,603 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:33:32,833 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "token": "e1550202429f43c7bf71043868712642"
+            },
+            "desc": {
+                "token": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": []
+    },
+    "variables": {
+        "variables": [
+            {
+                "prefix": "http://10.101.12.4:15905"
+            }
+        ],
+        "desc": {
+            "prefix": ""
+        }
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "{{prefix}}/streamer-fe/api/monitor",
+    "method": "GET",
+    "name": "streamer 监控",
+    "times": 1,
+    "project": "1",
+    "leveltag_name": "用例二级"
+}
+2019-11-06 13:33:32,834 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}
+2019-11-06 13:33:43,744 [INFO] - before process request data:
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {
+                "token": "e1550202429f43c7bf71043868712642"
+            },
+            "desc": {
+                "token": ""
+            }
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": []
+    },
+    "variables": {
+        "variables": [
+            {
+                "prefix": "http://10.101.12.4:15905"
+            }
+        ],
+        "desc": {
+            "prefix": ""
+        }
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "url": "{prefix}/streamer-fe/api/monitor",
+    "method": "GET",
+    "name": "streamer 监控",
+    "times": 1,
+    "project": "1",
+    "leveltag_name": "用例二级"
+}
+2019-11-06 13:33:43,745 [INFO] - before process request params:
+{
+    "token": "0c2fd113f498b140dbba979c07e7cb28"
+}

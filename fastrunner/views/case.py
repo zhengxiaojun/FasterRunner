@@ -9,6 +9,7 @@ from fastrunner.utils.decorator import request_log
 from fastrunner.utils.parser import Format, Parse
 from django.db import DataError
 from fastrunner.views.casefile import FileParse
+from datetime import datetime
 
 
 class CaseTemplateView(GenericViewSet):
@@ -21,7 +22,7 @@ class CaseTemplateView(GenericViewSet):
     @method_decorator(request_log(level='DEBUG'))
     def list(self, request):
         """
-        接口列表 {
+         用例列表 {
             project: int,
             node: int
         }
@@ -41,7 +42,7 @@ class CaseTemplateView(GenericViewSet):
     @method_decorator(request_log(level='INFO'))
     def add(self, request):
         """
-        新增一个接口
+        新增一个用例
         """
 
         case = Format(request.data)
@@ -66,7 +67,7 @@ class CaseTemplateView(GenericViewSet):
     @method_decorator(request_log(level='INFO'))
     def update(self, request, **kwargs):
         """
-        更新接口
+        更新用例
         """
         pk = kwargs['pk']
         case = Format(request.data)
@@ -77,7 +78,8 @@ class CaseTemplateView(GenericViewSet):
             'body': case.testcase,
             'url': case.url,
             'method': case.method,
-            'leveltag_name': case.leveltag_name
+            'leveltag_name': case.leveltag_name,
+            'update_time': datetime.now()
         }
 
         try:
@@ -90,6 +92,7 @@ class CaseTemplateView(GenericViewSet):
     @method_decorator(request_log(level='INFO'))
     def copy(self, request, **kwargs):
         """
+        复制用例
         pk int: test id
         {
             name: case name
@@ -109,7 +112,7 @@ class CaseTemplateView(GenericViewSet):
     @method_decorator(request_log(level='INFO'))
     def delete(self, request, **kwargs):
         """
-        删除一个接口 pk
+        删除一个用例 pk
         删除多个
         [{
             id:int
@@ -141,7 +144,7 @@ class CaseTemplateView(GenericViewSet):
     @method_decorator(request_log(level='INFO'))
     def single(self, request, **kwargs):
         """
-        查询单个 case，返回body信息
+        查询单个用例，返回body信息
         """
         try:
             case = models.Case.objects.get(id=kwargs['pk'])
@@ -178,6 +181,10 @@ class CaseTemplateView(GenericViewSet):
         test_cases = parse.parsePostmanJson(folder_level)
 
         for test_case in test_cases:
+            case = models.Case.objects.filter(name=test_case["name"])
+            if case:
+                test_case["name"] = test_case["name"] + leveltagName
+
             case_body = {
                 'name': test_case["name"],
                 'body': test_case["body"],
