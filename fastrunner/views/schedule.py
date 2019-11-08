@@ -3,6 +3,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from djcelery import models as celery_models
 from rest_framework.viewsets import GenericViewSet
 from djcelery import models
+from fastrunner import models as frmodels
 from rest_framework.response import Response
 from FasterRunner import pagination
 from fastrunner import serializers
@@ -67,9 +68,14 @@ class ScheduleView(GenericViewSet):
     def delete(self, request, **kwargs):
         """删除任务
         """
-        task = models.PeriodicTask.objects.get(id=kwargs["id"])
+        task_id = kwargs["id"]
+        task = models.PeriodicTask.objects.get(id=task_id)
         task.enabled = False
         task.delete()
+
+        crontab = models.CrontabSchedule.objects.get(id=task.crontab_id)
+        crontab.delete()
+
         return Response(response.TASK_DEL_SUCCESS)
 
     @method_decorator(request_log(level='INFO'))
@@ -82,12 +88,20 @@ class ScheduleView(GenericViewSet):
         except ObjectDoesNotExist:
             return Response(response.TASK_NOT_EXISTS)
 
+        cases = []
+        for case_id in eval(task.args):
+            case = frmodels.Case.objects.get(id=case_id)
+            cases.append({
+                'case_id': case.id,
+                'case_name': case.name
+            })
+
         resp = {
             'data': {
                 'id': task.id,
                 'name': task.name,
                 'enable': task.enabled,
-                'case_ids': task.args,
+                'cases': cases,
                 'kwargs': task.kwargs,
                 'crontab_id': task.crontab_id
             },
