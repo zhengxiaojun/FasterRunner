@@ -33,7 +33,9 @@ urlpatterns = [
         "post": "add",
     })),
 
-    path('schedule/<int:pk>/', schedule.ScheduleView.as_view({
+    path('schedule/<int:id>/', schedule.ScheduleView.as_view({
+        "get": "single",
+        "patch": "update",
         "delete": "delete"
     })),
 

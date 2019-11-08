@@ -1,4 +1,6 @@
 from django.utils.decorators import method_decorator
+from django.core.exceptions import ObjectDoesNotExist
+from djcelery import models as celery_models
 from rest_framework.viewsets import GenericViewSet
 from djcelery import models
 from rest_framework.response import Response
@@ -23,8 +25,13 @@ class ScheduleView(GenericViewSet):
         查询项目信息
         """
         project = request.query_params.get("project")
-        schedule = self.get_queryset().filter(description=project).order_by('-date_changed')
-        page_schedule = self.paginate_queryset(schedule)
+        search = request.query_params.get("search")
+        queryset = self.get_queryset().filter(description=project).order_by('-date_changed')
+
+        if search != '':
+            queryset = queryset.filter(name__contains=search)
+
+        page_schedule = self.paginate_queryset(queryset)
         serializer = self.get_serializer(page_schedule, many=True)
         return self.get_paginated_response(serializer.data)
 
@@ -32,47 +39,59 @@ class ScheduleView(GenericViewSet):
     def add(self, request):
         """新增定时任务{
             name: str
-            corntab: str
+            crontab: str
             switch: bool
-            data: [int,int]
+            data: [int,int]  CASE ID ORDER BY STEP
+            suite_id: int
             strategy: str
             receiver: str
             copy: str
             project: int
         }
         """
-        task = Task(**request.data)
+        task = Task('add', **request.data)
         resp = task.add_task()
         return Response(resp)
 
-    #
-    # @method_decorator(request_log(level='INFO'))
-    # def update(self, request):
-    #     """
-    #     编辑项目
-    #     """
-    #
-    #     try:
-    #         project = models.Project.objects.get(id=request.data['id'])
-    #     except (KeyError, ObjectDoesNotExist):
-    #         return Response(response.SYSTEM_ERROR)
-    #
-    #     if request.data['name'] != project.name:
-    #         if models.Project.objects.filter(name=request.data['name']).first():
-    #             return Response(response.PROJECT_EXISTS)
-    #
-    #     # 调用save方法update_time字段才会自动更新
-    #     project.name = request.data['name']
-    #     project.desc = request.data['desc']
-    #     project.save()
-    #
-    #     return Response(response.PROJECT_UPDATE_SUCCESS)
-    #
-    # @method_decorator(request_log(level='INFO'))
+    @method_decorator(request_log(level='INFO'))
+    def update(self, request, **kwargs):
+        """
+        更新任务
+        """
+        request.data["task_id"] = kwargs['id']
+        task = Task('update', **request.data)
+        resp = task.update_task()
+        return Response(resp)
+
+    @method_decorator(request_log(level='INFO'))
     def delete(self, request, **kwargs):
         """删除任务
         """
-        task = models.PeriodicTask.objects.get(id=kwargs["pk"])
+        task = models.PeriodicTask.objects.get(id=kwargs["id"])
         task.enabled = False
         task.delete()
         return Response(response.TASK_DEL_SUCCESS)
+
+    @method_decorator(request_log(level='INFO'))
+    def single(self, request, **kwargs):
+        """
+        查询单个任务信息
+        """
+        try:
+            task = models.PeriodicTask.objects.get(id=kwargs['id'])
+        except ObjectDoesNotExist:
+            return Response(response.TASK_NOT_EXISTS)
+
+        resp = {
+            'data': {
+                'id': task.id,
+                'name': task.name,
+                'enable': task.enabled,
+                'case_ids': task.args,
+                'kwargs': task.kwargs,
+                'crontab_id': task.crontab_id
+            },
+            'success': True
+        }
+
+        return Response(resp)

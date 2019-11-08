@@ -224,6 +224,14 @@ VARIABLES_UPDATE_SUCCESS = {
     "msg": "全局变量更新成功"
 }
 
+# TASK
+
+CRONTAB_ADD_SUCCESS = {
+    "code": "0001",
+    "success": True,
+    "msg": "时间表达式新增成功"
+}
+
 TASK_ADD_SUCCESS = {
     "code": "0001",
     "success": True,
@@ -242,10 +250,22 @@ TASK_HAS_EXISTS = {
     "msg": "定时任务已存在"
 }
 
+TASK_NOT_EXISTS = {
+    "code": "0103",
+    "success": False,
+    "msg": "该任务不存在"
+}
+
 TASK_EMAIL_ILLEGAL = {
     "code": "0102",
     "success": False,
     "msg": "请指定邮件接收人列表"
+}
+
+TASK_UPDATE_SUCCESS = {
+    "code": "0101",
+    "success": True,
+    "msg": "定时任务更新成功"
 }
 
 TASK_DEL_SUCCESS = {
