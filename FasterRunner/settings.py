@@ -91,7 +91,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
@@ -170,9 +169,11 @@ CORS_ALLOW_HEADERS = (
 )
 
 djcelery.setup_loader()
-CELERY_ENABLE_UTC = True
+CELERY_ENABLE_UTC = False
 CELERY_TIMEZONE = 'Asia/Shanghai'
-BROKER_URL = 'amqp://username:password@IP:5672//'
+# BROKER_URL = 'amqp://username:password@IP:5672//'
+# BROKER_URL = 'amqp://jack:123456@localhost:15672'
+BROKER_URL = 'redis://127.0.0.1:6379/6'
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
 CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
 CELERY_ACCEPT_CONTENT = ['application/json']
@@ -181,15 +182,22 @@ CELERY_RESULT_SERIALIZER = 'json'
 
 CELERY_TASK_RESULT_EXPIRES = 7200
 CELERYD_CONCURRENCY = 1 if DEBUG else 5
-CELERYD_MAX_TASKS_PER_CHILD = 40
+CELERYD_MAX_TASKS_PER_CHILD = 20
 
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
     'formatters': {
         'standard': {
-            'format': '%(asctime)s [%(levelname)s] - %(message)s'}
-        # 日志格式
+            'format': '%(asctime)s [%(levelname)s] - %(message)s'
+        },
+        'direct': {
+            'format': '%(asctime)s - %(message)s'
+        },
+        'json': {
+            'format': '%(message)s'
+        },
+
     },
     'filters': {
     },
@@ -228,6 +236,18 @@ LOGGING = {
             'backupCount': 5,
             'formatter': 'standard',
         },
+        'celery.worker': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/celery.worker.log'),
+            'formatter': 'direct'
+        },
+        'celery.task': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/celery.task.log'),
+            'formatter': 'direct'
+        },
     },
     'loggers': {
         'django': {
@@ -249,6 +269,14 @@ LOGGING = {
             'handlers': ['scprits_handler', 'console'],
             'level': 'INFO',
             'propagate': True
-        }
+        },
+        'celery.worker': {
+            'handlers': ['celery.worker'],
+            'level': 'DEBUG'
+        },
+        'celery.task': {
+            'handlers': ['celery.task'],
+            'level': 'DEBUG'
+        },
     }
 }

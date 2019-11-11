@@ -39,6 +39,20 @@ python3 manage.py migrate djcelery
 # 启动服务
 
 python manage.py runserver
+
+
+# 定时任务
+
+## 启动worker
+python manage.py celery worker -A FasterRunner --loglevel=info
+
+## 启动定时任务监听器
+python manage.py celery beat --loglevel=info
+
+## 启动任务监控后台
+celery flower -A FasterRunner --auto_refresh=True --port=5555 --loglevel=info
+
+celery status -b redis://127.0.0.1:6379/6
 ```
 
 

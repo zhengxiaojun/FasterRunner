@@ -1,9 +1,7 @@
-
 from celery import shared_task
 from django.core.exceptions import ObjectDoesNotExist
 from fastrunner import models
 from fastrunner.utils.loader import save_summary, debug_suite, debug_api
-
 
 
 @shared_task
@@ -22,16 +20,37 @@ def async_debug_suite(suite, project, obj, report, config):
     save_summary(report, summary, project)
 
 
+@shared_task
+def schedule_debug_api(*args, **kwargs):
+    """
+    定时任务 case
+    """
+    print('case ids:' + str(args))
+    project = kwargs["project"]
+    name = kwargs["name"]
+    test_cases = []
+
+    for case_id in args:
+        try:
+            caseinfo = models.Case.objects.get(id=case_id)
+            test_cases.append(eval(caseinfo.body))
+        except ObjectDoesNotExist:
+            pass
+
+    summary = debug_api(test_cases, project, save=False)
+    save_summary(name, summary, project, type=3)
+
 
 @shared_task
 def schedule_debug_suite(*args, **kwargs):
-    """定时任务
     """
-
+    定时任务 suite
+    """
     project = kwargs["project"]
     suite = []
     test_sets = []
     config_list = []
+
     for pk in args:
         try:
             name = models.Case.objects.get(id=pk).name
@@ -43,8 +62,7 @@ def schedule_debug_suite(*args, **kwargs):
             pass
 
     for content in suite:
-        test_list = models.CaseStep.objects. \
-            filter(case__id=content["id"]).order_by("step").values("body")
+        test_list = models.CaseStepInSuite.objects.filter(case__id=content["id"]).order_by("step").values("body")
 
         testcase_list = []
         config = None

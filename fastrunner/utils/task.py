@@ -22,10 +22,11 @@ class Task(object):
         self.__data = kwargs["data"]
         self.__crontab = kwargs["crontab"]
         self.__switch = kwargs["switch"]
-        self.__task = "fastrunner.tasks.schedule_debug_suite"
+        self.__task = "fastrunner.tasks.schedule_debug_api"
         self.__project = kwargs["project"]
         self.__suite_id = kwargs["suite_id"]
         self.__email = {
+            "name": kwargs["name"],
             "strategy": kwargs["strategy"],
             "copy": kwargs["copy"],
             "receiver": kwargs["receiver"],
@@ -105,6 +106,7 @@ class Task(object):
 
             data = {
                 'name': self.__name,
+                'task': self.__task,
                 'crontab_id': self.__crontab_id,
                 'enabled': self.__switch,
                 'args': json.dumps(self.__data, ensure_ascii=False),
