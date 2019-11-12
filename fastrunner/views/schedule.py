@@ -66,7 +66,8 @@ class ScheduleView(GenericViewSet):
 
     @method_decorator(request_log(level='INFO'))
     def delete(self, request, **kwargs):
-        """删除任务
+        """
+        删除单个任务
         """
         task_id = kwargs["id"]
         task = models.PeriodicTask.objects.get(id=task_id)
@@ -75,6 +76,22 @@ class ScheduleView(GenericViewSet):
 
         crontab = models.CrontabSchedule.objects.get(id=task.crontab_id)
         crontab.delete()
+
+        return Response(response.TASK_DEL_SUCCESS)
+
+    @method_decorator(request_log(level='INFO'))
+    def batch_delete(self, request, **kwargs):
+        """
+        批量删除任务
+        """
+        tasks = request.data
+        for task in tasks:
+            task = models.PeriodicTask.objects.get(id=task['id'])
+            task.enabled = False
+            task.delete()
+
+            crontab = models.CrontabSchedule.objects.get(id=task.crontab_id)
+            crontab.delete()
 
         return Response(response.TASK_DEL_SUCCESS)
 

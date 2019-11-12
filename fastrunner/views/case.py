@@ -7,8 +7,8 @@ from fastrunner.utils import response
 from fastrunner.utils import prepare
 from fastrunner.utils.decorator import request_log
 from fastrunner.utils.parser import Format, Parse
+from fastrunner.utils.filehandle import FileParse
 from django.db import DataError
-from fastrunner.views.casefile import FileParse
 from datetime import datetime
 
 

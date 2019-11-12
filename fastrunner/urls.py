@@ -15,7 +15,8 @@ Including another URLconf
 """
 
 from django.urls import path
-from fastrunner.views import project, config, schedule, run, case, suite, report, leveltag, casefile
+from fastrunner.views import project, config, schedule, run, case, suite, report, leveltag
+from fastrunner.utils import filehandle
 
 urlpatterns = [
     # 项目相关接口地址
@@ -31,6 +32,7 @@ urlpatterns = [
     path('schedule/', schedule.ScheduleView.as_view({
         "get": "list",
         "post": "add",
+        "delete": "batch_delete"
     })),
 
     path('schedule/<int:id>/', schedule.ScheduleView.as_view({
@@ -47,7 +49,7 @@ urlpatterns = [
     })),
 
     # file 接口地址
-    path('file/', casefile.FileView.as_view({
+    path('file/', filehandle.FileView.as_view({
         "put": "upload"
     })),
 
