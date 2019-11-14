@@ -205,7 +205,7 @@ class VariablesView(GenericViewSet):
         request.data["project"] = project
 
         models.Variables.objects.create(**request.data)
-        return Response(response.CONFIG_ADD_SUCCESS)
+        return Response(response.VARIABLES_ADD_SUCCESS)
 
     @method_decorator(request_log(level='INFO'))
     def update(self, request, **kwargs):
@@ -253,7 +253,7 @@ class VariablesView(GenericViewSet):
         except ObjectDoesNotExist:
             return Response(response.VARIABLES_NOT_EXISTS)
 
-        return Response(response.API_DEL_SUCCESS)
+        return Response(response.VARIABLES_DELETE_SUCCESS)
 
 
 class HostIPView(GenericViewSet):

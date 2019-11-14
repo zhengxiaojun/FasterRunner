@@ -170,22 +170,44 @@ CONFIG_EXISTS = {
     "msg": "此配置已存在，请重新命名"
 }
 
+# VARIABLES
+
+VARIABLES_ADD_SUCCESS = {
+    'code': '0001',
+    'success': True,
+    'msg': '全局变量添加成功'
+}
+
 VARIABLES_EXISTS = {
     "code": "0101",
     "success": False,
-    "msg": "此变量已存在，请重新命名"
+    "msg": "该变量已存在，请重新命名"
 }
+
+VARIABLES_NOT_EXISTS = {
+    "code": "0102",
+    "success": False,
+    "msg": "该全局变量不存在"
+}
+
+VARIABLES_UPDATE_SUCCESS = {
+    "code": "0002",
+    "success": True,
+    "msg": "全局变量更新成功"
+}
+
+VARIABLES_DELETE_SUCCESS = {
+    "code": "0003",
+    "success": True,
+    "msg": "全局变量删除成功"
+}
+
+# CONFIG
 
 CONFIG_ADD_SUCCESS = {
     'code': '0001',
     'success': True,
     'msg': '环境添加成功'
-}
-
-VARIABLES_ADD_SUCCESS = {
-    'code': '0001',
-    'success': True,
-    'msg': '变量添加成功'
 }
 
 CONFIG_NOT_EXISTS = {
@@ -206,22 +228,10 @@ REPORT_DEL_SUCCESS = {
     'msg': '报告删除成功'
 }
 
-VARIABLES_NOT_EXISTS = {
-    "code": "0102",
-    "success": False,
-    "msg": "指定的全局变量不存在"
-}
-
 CONFIG_UPDATE_SUCCESS = {
     "code": "0002",
     "success": True,
     "msg": "环境更新成功"
-}
-
-VARIABLES_UPDATE_SUCCESS = {
-    "code": "0002",
-    "success": True,
-    "msg": "全局变量更新成功"
 }
 
 # TASK
